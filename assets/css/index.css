@@ -9,6 +9,7 @@ h3{
 
 .brand{
 	color: #ecf0f1;
+	margin: 0;
 }
 
 .navitem {
@@ -24,6 +25,17 @@ h3{
 	background: rgba(1, 1, 1, 0.4);
 	backdrop-filter: blur(14px);
 }
+
+.navbartp a{
+	text-decoration: none;
+}
+
+.navbartp a:hover{
+	text-decoration: underline;
+	color: #bdc3c7;;
+}
+
+.navbartp a:visited{}
 
 .content{
 	padding: 2em;
