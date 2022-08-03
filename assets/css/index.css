@@ -1,0 +1,50 @@
+h3{
+	padding-bottom: 0.5em;
+}
+
+.education h5,h6{
+	display: inline;
+	padding-right: 1em;
+}
+
+.brand{
+	color: #ecf0f1;
+}
+
+.navitem {
+	padding-right: 2em;
+	padding-left: 2em;
+	color: #bdc3c7;
+	box-sizing: border-box;
+	padding: var(--bs-nav-link-padding-y);
+	margin: 0;
+}
+
+.navbartp {
+	background: rgba(1, 1, 1, 0.4);
+	backdrop-filter: blur(14px);
+}
+
+.content{
+	padding: 2em;
+	color: #ecf0f1;
+}
+
+.divider{
+	border-bottom: 2px;
+	border-color: #bdc3c7;
+	border-bottom-style: solid;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.education .divider{
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+
+body{
+	font-family: helvetica;
+	height: 10000px;
+}
