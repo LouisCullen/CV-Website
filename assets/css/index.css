@@ -1,5 +1,11 @@
 h3{
 	padding-bottom: 0.5em;
+	position: relative;
+}
+
+h3 a{
+	position: absolute;
+	top: -157px;
 }
 
 .education h5,h6{
@@ -10,6 +16,8 @@ h3{
 .brand{
 	color: #ecf0f1;
 	margin: 0;
+	padding-top: 1em;
+	padding-left: 1em;
 }
 
 .navitem {
@@ -21,8 +29,13 @@ h3{
 	margin: 0;
 }
 
+.vertical{
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
 .navbartp {
-	background: rgba(1, 1, 1, 0.4);
+	background: rgba(1, 1, 1, 0.2);
 	backdrop-filter: blur(14px);
 }
 
@@ -35,11 +48,14 @@ h3{
 	color: #bdc3c7;;
 }
 
-.navbartp a:visited{}
-
 .content{
-	padding: 2em;
+	padding: 32px;
+	padding-top: 25px;
 	color: #ecf0f1;
+}
+
+.content p{
+	color: #bdc3c7;;
 }
 
 .divider{
