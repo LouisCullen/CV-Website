@@ -21,6 +21,12 @@ h3 a{
 	padding-right: 1em;
 }
 
+.education img{
+	width: 100%;
+	padding-left: 20%;
+	min-width: 200px;
+}
+
 .brand{
 	color: #ecf0f1;
 	margin: 0;
@@ -42,10 +48,84 @@ h3 a{
 	padding-bottom: 0.1em;
 }
 
-.navbartp {
-	background: rgba(1, 1, 1, 0.2);
-	backdrop-filter: blur(14px);
+
+@supports (backdrop-filter: blur(14px)){
+	.navbartp {
+		background: rgba(1, 1, 1, 0.2);
+		backdrop-filter: blur(14px);
+	}
+	.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	align-items: center;
+	text-align: justify;
+	display: flex;
+	}
+
+	.overlay p{
+		padding: 1em;
+	}
+
+	.projects .container:hover .overlay{
+		opacity: 1;
+		backdrop-filter: blur(10px);
+	}
 }
+
+@supports not (backdrop-filter: blur(14px)){
+	.navbartp{
+		background-color: #2c3e50;
+		opacity: 1;
+		backdrop-filter: none;
+	}
+
+	.brand{
+		padding-top: 4vw;
+		padding-bottom: 4vw;
+	}
+
+	.overlay{
+		opacity: 1;
+		position: relative;
+		text-decoration: none;
+		padding-bottom: 50px;
+	}
+
+	.project a{
+		text-decoration: none;
+	}
+
+	a{
+		font-size: 4vw;
+	}
+
+	.navbar-nav{
+		display: none;
+	}
+
+	h3{
+		font-size: 6vw;
+	}
+
+	h5{
+		font-size: 5vw;
+	}
+
+	h6{
+		font-size: 4.5vw;
+	}
+
+	p{
+		font-size: 4vw;
+	}
+
+
+}
+
 
 .navbartp a{
 	text-decoration: none;
@@ -89,23 +169,5 @@ body{
 	padding: 0;
 }
 
-.overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	align-items: center;
-	text-align: justify;
-	display: flex;
-}
 
-.overlay p{
-	padding: 1em;
-}
 
-.projects .container:hover .overlay{
-	opacity: 1;
-	backdrop-filter: blur(10px);
-}
