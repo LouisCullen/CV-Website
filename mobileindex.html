@@ -2,19 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="theme-color" content="2a3a4b"/>
 	<title>Louis Cullen Computing</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/mobileindex.css">
 </head>
 <body style="background-color: #34495e">
-	<nav class="navbartp navbar flex-row sticky-top">
-		<a href="mailto: cullen_louis@me.com"class="navitem" style="position: absolute; right: 20px; top: 2em">cullen_louis@me.com</a>
-		<a href="https://github.com/LouisCullen"class="navitem" style="position: absolute; right: 20px; top: 3.5em">github.com/LouisCullen</a>
-		<a href="https://www.linkedin.com/in/louis-cullen"class="navitem" style="position: absolute; right: 20px; top: 5em">linkedin.com/in/louis-cullen</a>
+	<nav class="navbartp navbar flex-row sticky-top justify-content-center justify-content-lg-start" style="">
+		<a href="mailto: cullen_louis@me.com"class="navitem d-none d-lg-block" style="position: absolute; right: 20px; top: 2em">cullen_louis@me.com</a>
+		<a href="https://github.com/LouisCullen"class="navitem d-none d-lg-block" style="position: absolute; right: 20px; top: 3.5em">github.com/LouisCullen</a>
+		<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-none d-lg-block" style="position: absolute; right: 20px; top: 5em">linkedin.com/in/louis-cullen</a>
 		
-		<div class="navbar-brand brand col-12 d-none d-lg-block"><img src="src/logo.png" style="height: 2.5em"></div>
-		<div class="navbar-brand brand col-2.5 d-lg-none" style="padding-top: 0;"><img src="src/logo2.png" style="height: 12vh; min-height: 100px;"></div>
+		<div class="navbar-brand brand col-12 d-flex justify-content-center justify-content-lg-start"><img src="src/logo.png"></div>
+		<div class="navbar-brand brand col-2.5 d-none" style="padding-top: 1vh;"><img src="src/logo2.png" style="height: 10vh; min-height: 100px;"></div>
 		<div class="navbar-nav justify-content-center flex-row d-none d-lg-flex" style="padding-left: 1em;">
 			<a class="navitem nav-link" href="#intro">Introduction</a>
 			<p class="navitem">|</p>
@@ -35,47 +36,47 @@
 		<div class="content row justify-content-center">
 			<div class="intro row section">
 				<h3 class="row"><a id="intro"></a>Introduction</h3>
-				<div class="col-9">
+				<div class="col-12 col-lg-9">
 					<p>My name is Louis Cullen, student of Computer Science at the University of Manchester. I'm a passionate, hardworking and collaborative student with an urge to find out about all areas of the field, particularly with an eye on the future and where technology can have the biggest impact. While there is no area which I can claim to be an expert in yet, I'm always eager to learn from courses and fellow computer scientists with 100% effort as I do so.</p>
 				</div>
-				<div class="col-3">
-					<img src="src/profile.jpg" style="height:12em; margin-top: -2em;">
+				<div class="d-none d-lg-block col-3" style="justify-content: center; display: flex;">
+					<img src="src/profile.jpg" style="height:10em;">
 				</div>
 			</div>
 			<div class="education row section">
 				<h3 class="row"><a id="education"></a>Education</h3>
 				<div class="row school">
-					<div class="col-12 col-md-7">
+					<div class="col-12 col-lg-7">
 						<h5>University of Manchester</h5><h6>2021-present</h6>
 						<p>I'm currently enrolled on MEng Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
 					</div>
-					<div class="col-5">
+					<div class="col-12 col-lg-5">
 						<img src="src/uom2.png">
 					</div>
 				</div>
 				<div class="row school">
-					<div class="col-12 col-md-7">
+					<div class="col-12 col-lg-7">
 						<h5>Therfield Sixth Form</h5><h6>2019-2021</h6>
 						<p>I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
 					</div>
-					<div class="col-5">
+					<div class="col-12 col-lg-5">
 						<img src="src/therfield_crop.png">
 					</div>
 				</div>
 				<div class="row school">
-					<div class="col-12 col-md-7">
+					<div class="col-12 col-lg-7">
 						<h5>Therfield School</h5><h6>2014-2019</h6>
 						<p>I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
 					</div>
-					<div class="col-5 col-lg-5">
+					<div class="col-12 col-lg-5">
 						<img src="src/therfield_crop.png">
 					</div>
 				</div>
 			</div>
 			<div class="projects row section">
 				<h3 class="row"><a id="projects"></a>Projects</h3>
-				<div class="row">
-					<div class="col-12 col-md-6 project column">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-6 project column">
 						<h5 class="col-12">hustl.io</h5>
 						<a class="container col-12" href="https://github.com/Manc-Y15/hustl.io">
 							<img src="src/hustlio.png" class="row" style="margin: 0;">
@@ -84,12 +85,21 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-12 col-md-6 project column">
+					<div class="col-12 col-lg-6 project column">
 						<h5 class="col-12">Asteroid Belt</h5>
 						<a class="container col-12" href="#">
 							<img src="src/asteroid.png" class="row" style="margin: 0;">
 							<div class="overlay">
 								<p>Asteroid belt was a solo project focused on game development with Python Tkinter. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-lg-6 project column">
+						<h5 class="col-12">lc-computing.com</h5>
+						<a class="container col-12" href="#">
+							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;">
+							<div class="overlay">
+								<p>lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Created with raw CSS and HTML alongside bootstrap, it is hosted as a static website on AWS through their S3 storage system. The DNS is handled by Route 53, completing the entire front-to-back development.</p>
 							</div>
 						</a>
 					</div>
@@ -100,6 +110,11 @@
 				<div class="col-12">
 					<p>Having worked as part of many teams, from sports clubs to supermarkets, I thrive when collaborating with others. While sometimes I like to be left to work on a task without interruption, I also appreciate the benefits of sharing ideas in a group to produce the best results possible. I am happy to step up to lead in positions where I'm comfortable with the project's aim, but I'm equally happy to follow others' lead when I have less experience.</p>
 				</div>
+			</div>
+			<div class="row" style="padding-top: 30px;">
+				<a href="mailto: cullen_louis@me.com"class="navitem d-lg-none col-12 text-end">cullen_louis@me.com</a>
+				<a href="https://github.com/LouisCullen"class="navitem d-lg-none col-12 text-end">github.com/LouisCullen</a>
+				<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-lg-none col-12 text-end">linkedin.com/in/louis-cullen</a>
 			</div>
 		</div>
 	</div>

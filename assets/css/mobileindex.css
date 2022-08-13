@@ -1,0 +1,188 @@
+h3{
+	padding-bottom: 0.5em;
+	position: relative;
+}
+
+h3 a{
+	position: absolute;
+	top: -157px;
+}
+
+.section{
+	border-bottom: 2px;
+	border-color: #bdc3c7;
+	border-bottom-style: solid;
+	padding-bottom: 2em;
+	margin-bottom: 3em;
+}
+
+.education h5,h6{
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.education img{
+	width: 100%;
+}
+
+.brand{
+	color: #ecf0f1;
+	margin: 0;
+	padding-top: 1em;
+	padding-left: 1em;
+}
+
+.navitem {
+	padding-right: 2em;
+	padding-left: 2em;
+	color: #bdc3c7;
+	box-sizing: border-box;
+	padding: var(--bs-nav-link-padding-y);
+	margin: 0;
+}
+
+.vertical{
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+@supports (backdrop-filter: blur(14px)){
+	.navbartp {
+		background: rgba(1, 1, 1, 0.2);
+		backdrop-filter: blur(14px);
+		margin: 0;
+	}
+	.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	align-items: center;
+	text-align: justify;
+	display: flex;
+	}
+
+	.overlay p{
+		padding: 1em;
+	}
+
+	.projects .container:hover .overlay{
+		opacity: 1;
+		backdrop-filter: blur(10px);
+	}
+
+	.brand img{
+		 width: 40vw;
+	}
+}
+
+@supports not (backdrop-filter: blur(14px)){
+	.navbartp{
+		background-color: #2a3a4b;
+		opacity: 1;
+		backdrop-filter: none;
+		margin: 0;
+	}
+
+	.brand{
+		padding-top: 4vw;
+		padding-bottom: 4vw;
+	}
+
+	.brand img{
+		width: 70vw;
+	}
+
+	.section{
+		padding-top: 1.5em;
+	}
+
+	.overlay{
+		opacity: 1;
+		position: relative;
+		text-decoration: none;
+		padding-bottom: 50px;
+	}
+
+	.project a{
+		text-decoration: none;
+	}
+
+	a{
+		font-size: 4vw;
+	}
+
+	.navbar-nav{
+		display: none;
+	}
+
+	h3{
+		font-size: 6vw;
+	}
+
+	h5{
+		font-size: 5vw;
+	}
+
+	h6{
+		font-size: 4.5vw;
+	}
+
+	p{
+		font-size: 4vw;
+	}
+
+}
+
+
+.navbartp a{
+	text-decoration: none;
+}
+
+.navbartp a:hover{
+	text-decoration: underline;
+	color: #bdc3c7;;
+}
+
+.content{
+	padding: 32px;
+	padding-top: 25px;
+	color: #ecf0f1;
+}
+
+.content p{
+	color: #bdc3c7;;
+}
+
+.school{
+	padding-bottom: 1.5em;
+	align-items: center;
+}
+
+.school p{
+	padding-top: 0.5em;
+}
+
+
+body{
+	font-family: helvetica;
+}
+
+.projects img{
+	width: 100%;
+	padding-bottom: 0.5em;
+}
+
+.project{
+	padding: 10px;
+}
+
+.projects .container{
+	position: relative;
+	padding: 0;
+}
+
+
+
