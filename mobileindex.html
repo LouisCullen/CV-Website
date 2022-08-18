@@ -3,20 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="theme-color" content="2a3a4b"/>
+	<meta name="viewport" content="initial-scale=1">
 	<title>Louis Cullen Computing</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/mobileindex.css">
+	<script src="https://kit.fontawesome.com/2938df8840.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var hustlio = ["Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.","This project was beneficial for me as it was my first experience of working as a team on a programming project. It taught me how important communication was, with our use of discord calls and regular meetings keeping the project on track, as well as the importance of being open about lack of knowledge and learning from other developers.","The technologies used were Python, Django, CSS and HTML. I also encountered Docker, SQLite and Postgres DB during development, though these were more the focus of other members of the team."]
+		var asteroid = ["Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.","Creating the game was enjoyable as it gave me a creative freedom which I hadn't experienced much before. The prompt gave some requirements for game features, but the vagueness of the rest allowed me to manage my own time and create a product fully from my own vision.","The single programming language used was Python with its Tkinter library, which was a given requirement. Tkinter isn't designed for game development like the Pygame library is, so it forced me to find workarounds for implementation, such as my own collision detection and entity tracking."]
+		var lc_computing = ["lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.","The main difference between this project and those I've done before is the lack of external motivation. As it is not being created for anyone else, all motivation must come from myself and any delays only impact my online profile. It has also challenged me to choose when to roll out new versions in order to avoid a messy site going live.","Created with CSS, HTML, JavaScript and Bootstrap, the website hosted as a static website on AWS through their S3 storage system. With the DNS also handled by AWS' Route 53, I have had to research different methods of hosting websites with cloud computing to find what worked for me, giving me further knowledge outside any courses I have done."]
+		function changeHustlio(buttonID){
+			var nextIndex = hustlio.indexOf(document.getElementById(buttonID.concat("-p")).innerHTML)+1;
+			if (nextIndex == hustlio.length) {
+				var nextIndex = 0;
+			}
+			document.getElementById(buttonID.concat("-p")).innerHTML = hustlio[nextIndex];
+		}
+		function changeAsteroid(buttonID){
+			var nextIndex = asteroid.indexOf(document.getElementById(buttonID.concat("-p")).innerHTML)+1;
+			if (nextIndex == asteroid.length) {
+				var nextIndex = 0;
+			}
+			document.getElementById(buttonID.concat("-p")).innerHTML = asteroid[nextIndex];
+		}
+		function changeLCComputing(buttonID){
+			var nextIndex = lc_computing.indexOf(document.getElementById(buttonID.concat("-p")).innerHTML)+1;
+			if (nextIndex == lc_computing.length) {
+				var nextIndex = 0;
+			}
+			document.getElementById(buttonID.concat("-p")).innerHTML = lc_computing[nextIndex];
+		}
+	</script>
 </head>
-<body style="background-color: #34495e">
-	<nav class="navbartp navbar flex-row sticky-top justify-content-center justify-content-lg-start" style="">
+<body style="background-color: #34495e; box-sizing: border-box;">
+	<nav class="navbartp navbar flex-row sticky-top justify-content-center justify-content-lg-start">
 		<a href="mailto: cullen_louis@me.com"class="navitem d-none d-lg-block" style="position: absolute; right: 20px; top: 2em">cullen_louis@me.com</a>
 		<a href="https://github.com/LouisCullen"class="navitem d-none d-lg-block" style="position: absolute; right: 20px; top: 3.5em">github.com/LouisCullen</a>
 		<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-none d-lg-block" style="position: absolute; right: 20px; top: 5em">linkedin.com/in/louis-cullen</a>
 		
 		<div class="navbar-brand brand col-12 d-flex justify-content-center justify-content-lg-start"><img src="src/logo.png"></div>
-		<div class="navbar-brand brand col-2.5 d-none" style="padding-top: 1vh;"><img src="src/logo2.png" style="height: 10vh; min-height: 100px;"></div>
-		<div class="navbar-nav justify-content-center flex-row d-none d-lg-flex" style="padding-left: 1em;">
+		<div class="navbar-nav justify-content-center flex-row">
 			<a class="navitem nav-link" href="#intro">Introduction</a>
 			<p class="navitem">|</p>
 			<a class="navitem nav-link" href="#education">Education</a>
@@ -25,14 +52,8 @@
 			<p class="navitem">|</p>
 			<a class="navitem nav-link" href="#personal">Personal</a>
 		</div>
-		<div class="navbar-nav justify-content-center flex-column col d-lg-none" style="padding-left: 1em;">
-			<a class="navitem vertical nav-link" href="#intro">Introduction</a>
-			<a class="navitem vertical nav-link" href="#education">Education</a>
-			<a class="navitem vertical nav-link" href="#">Experience</a>
-			<a class="navitem vertical nav-link" href="#">Personal</a>
-		</div>
 	</nav>
-	<div class="container" style="max-width: 1000px; padding: 2em; padding-top: 0;">
+	<div class="container" style="max-width: 1000px; padding-top: 0;">
 		<div class="content row justify-content-center">
 			<div class="intro row section">
 				<h3 class="row"><a id="intro"></a>Introduction</h3>
@@ -77,31 +98,52 @@
 				<h3 class="row"><a id="projects"></a>Projects</h3>
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-6 project column">
-						<h5 class="col-12">hustl.io</h5>
-						<a class="container col-12" href="https://github.com/Manc-Y15/hustl.io">
+						<a href="https://github.com/Manc-Y15/hustl.io">
+							<h5 class="col-12">hustl.io</h5>
+						</a>
+						<div class="container col-12">
 							<img src="src/hustlio.png" class="row" style="margin: 0;">
 							<div class="overlay">
-								<p>Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.</p>
+								<div class="col-12 col-lg-11">
+									<p id="hustl.io-p">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.</p>
+								</div>
+								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
+									<i class="fa-solid fa-caret-right" onclick="changeHustlio(this.id)" id="hustl.io"></i>		
+								</div>
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="col-12 col-lg-6 project column">
-						<h5 class="col-12">Asteroid Belt</h5>
-						<a class="container col-12" href="#">
+						<a href="#">
+							<h5 class="col-12">Asteroid Belt</h5>
+						</a>
+						<div class="container col-12">
 							<img src="src/asteroid.png" class="row" style="margin: 0;">
 							<div class="overlay">
-								<p>Asteroid belt was a solo project focused on game development with Python Tkinter. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
+								<div class="col-12 col-lg-11">
+									<p id="asteroid-p">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
+								</div>
+								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
+									<i class="fa-solid fa-caret-right" onclick="changeAsteroid(this.id)" id="asteroid"></i>		
+								</div>
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="col-12 col-lg-6 project column">
-						<h5 class="col-12">lc-computing.com</h5>
-						<a class="container col-12" href="#">
+						<a href="#">
+							<h5 class="col-12">lc-computing.com</h5>
+						</a>
+						<div class="container col-12">
 							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;">
 							<div class="overlay">
-								<p>lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Created with raw CSS and HTML alongside bootstrap, it is hosted as a static website on AWS through their S3 storage system. The DNS is handled by Route 53, completing the entire front-to-back development.</p>
+								<div class="col-12 col-lg-11">
+									<p id="lc-computing-p">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</p>
+								</div>
+								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
+									<i class="fa-solid fa-caret-right" onclick="changeLCComputing(this.id)" id="lc-computing"></i>
+								</div>
 							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
