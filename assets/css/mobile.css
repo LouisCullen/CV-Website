@@ -21,8 +21,8 @@ h3 a{
 	border-bottom: 2px;
 	border-color: #bdc3c7;
 	border-bottom-style: solid;
-	padding-bottom: 2em;
-	margin-bottom: 3em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .education h5,h6{
@@ -37,6 +37,17 @@ h3 a{
 .brand{
 	color: #ecf0f1;
 	margin: 0;
+	padding: 0;
+}
+
+.brand .logo{
+	width: 160px;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.brand .logo img{
+	width: 190%;
 }
 
 .navitem {
@@ -92,54 +103,55 @@ h3 a{
 	backdrop-filter: none;
 	margin: 0;
 	padding: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 	width: 100vw;
-}
-
-
-.brand img{
-	width: 150px;
-}
-
-.section{
-	padding-top: 1.5em;
 }
 
 .overlay{
 	opacity: 1;
 	position: relative;
 	text-decoration: none;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
-
 
 a{
 	font-size: 3.5vw;
 }
 
-/*	.navbar-nav{
-	display: none;
-}*/
-
 h3{
-	font-size: 6vw;
-}
-
-h5{
 	font-size: 5vw;
 }
 
-h6{
+h5{
 	font-size: 4.5vw;
 }
 
-p{
+h6{
 	font-size: 4vw;
+}
+
+p, ul{
+	font-size: 3.2vw;
 }
 
 .navbartp .face{
 	object-fit: cover;
-	width: 100px;
-	height: 100px;
+	width: 45px;
+	height: 45px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.navbartp .face img{
+	position: relative;
+	left: -25%;
+	top: -10%;
+	display: inline;
+	margin: 0 auto;
+	height: auto;
+	width: 150%;
 }
 
 .navbartp a{
@@ -181,16 +193,14 @@ body{
 }
 
 .project a{
-	text-decoration: none;
+	text-decoration: underline;
 	color: #ecf0f1 !important;
 }
 
-.project a:hover{
-	text-decoration: underline;
-}
 
 .projects img{
 	width: 100%;
+	border-radius: 15px;
 }
 
 .project{
@@ -202,13 +212,10 @@ body{
 	margin: 0;
 }
 
-.project i{
-	cursor: pointer;
-}
-
 .projects .container{
 	position: relative;
 	padding: 0;
+	overflow: hidden;
 }
 
 

@@ -37,43 +37,64 @@
 	</script>
 </head>
 <body style="background-color: #34495e; box-sizing: border-box;">
-	<nav class="navbartp navbar flex-row sticky-top justify-content-between">
-		<div class="navbar-brand brand col-6 d-flex justify-content-start"><img src="src/logo2.png"></div>
-		<img class="face col-6 float-end" src="src/profile.jpg">
+	<nav class="navbartp navbar flex-row justify-content-between">
+		<div class="navbar-brand brand col d-flex justify-content-start"><div class="logo"><img src="src/logo.png"></div></div>
+		<div class="face col-6 float-end"><img src="src/profile.jpg"></div>
 	</nav>
 	<div class="container" style="max-width: 1000px; padding-top: 0;">
 		<div class="content row justify-content-center">
-			<div class="row justify-content-center"><h2>THIS MOBILE VERSION IS UNDER DEVELOPMENT</h2></div>
+			<div class="row justify-content-center text-center" style="margin-bottom: 5px;margin-top: -10px;"><h3>THIS MOBILE VERSION IS UNDER DEVELOPMENT</h3></div>
 			
-			<div class="intro row section">
-				<h3 class="row"><a id="intro"></a>Introduction</h3>
-				<div class="col-12 col-lg-9">
-					<p>My name is Louis Cullen, a student at The University of Manchester who is currently working towards a MSc in Computer Science. I am passionate, hardworking and collaborative with an urge to find out about all areas of the field. I excel in gaining experience through hands-on work, as well as independent research outside of the job. Working as part of a team for almost two years at Sainsbury's, I have a proven ability to communicate with and organise a team to ensure maximum efficiency, as well as the effective sharing of skills and knowledge through training colleagues and teaching students. While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result, whether that is during a university team coding project or a personal website. While there is no area which I can claim to be an expert in yet, I'm always eager to learn from courses and fellow computer scientists with 100% effort as I do so.</p>
-				</div>
-				<div class="d-none d-lg-block col-3" style="justify-content: center; display: flex;">
-					<img src="src/profile.jpg" style="height:15em;">
-				</div>
-			</div>
-			<div class="experience row section">
-				<h3 class="row"><a id="experience"></a>Experience</h3>
-				<div class="col-12">
-					<div class="row experience_example">
-					<h4>Cloud Architecture DevOps</h4>
-					<p>
-						My experience mainly comes from shadow work with Cossy Cosmas of Diebold Nixdorf. I worked with Cossy across a six moth period, followed by occasional meetings which continue to the present. During these sessions, we discuss not only the skills which are required to convert university education to industrial applications, but also his responsibilities in the company and how they utilise cloud computing to their advantage. The focuses include:
-					</p>
-					<ul>
-						<li>Understanding the significant financial, operational and environmental benefits of cloud computing.</li>
-						<li>Reconciling my theoretical understanding of AWS Cloud technologies with direct exposure to a fully operational PCI DSS transaction processing service.</li>
-						<li>Exploring the pros and cons of a strict DevOps deployment methodology.</li>
-						<li>Developing a deeper understanding of DevOps concepts such as Infrastructure as Code and Configuration Management using Terraform and Puppet applications.</li>
-						<li>Learning coding concepts such as code branching, peer review, merging to master and deployment using GIT based code management tools.</li>
-						<li>Gaining an insight in to best-practice automation tools such as Jenkins and techniques such as Continuous Integration/Continuous Deployment.</li>
-						<li>Discussing emerging cloud technologies such as serverless computing and what benefits they bring to large organisations.</li>
-					</ul>
-					<p>
-						From these meetings, I have developed a greater understanding of how theoretical concepts, some of which I have covered in university modules, can be applied to a functioning company and be conveyed to less technical teams. The process of converting concepts to presentations to features is undoubtedly an important part of the development cycle, which I now have a greater understanding of in an industrial setting.
-					</p>
+			<div class="projects row section">
+				<h3 class="row"><a id="projects"></a>Projects</h3>
+				<div class="row justify-content-center">
+					<div class="col-12 project column">
+						<a href="https://github.com/Manc-Y15/hustl.io">
+							<h5 class="col-12">hustl.io</h5>
+						</a>
+						<div class="container col-12">
+							<img src="src/hustlio.png" class="row" style="margin: 0;">
+							<div class="overlay">
+								<div class="col-12" style="padding-bottom: 0;">
+									<p id="hustl.io-p">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.</p>
+								</div>
+								<div class="col-12">
+									<p onclick="changeHustlio(this.id)" id="hustl.io" style="text-decoration: underline; padding: 0;">Read more</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 project column">
+						<a href="#">
+							<h5 class="col-12">Asteroid Belt</h5>
+						</a>
+						<div class="container col-12">
+							<img src="src/asteroid.png" class="row" style="margin: 0;">
+							<div class="overlay">
+								<div class="col-12">
+									<p id="asteroid-p">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
+								</div>
+								<div class="col-12">
+									<p onclick="changeAsteroid(this.id)" id="asteroid" style="text-decoration: underline; padding: 0;">Read more</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 project column">
+						<a href="#">
+							<h5 class="col-12">lc-computing.com</h5>
+						</a>
+						<div class="container col-12">
+							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;">
+							<div class="overlay">
+								<div class="col-12">
+									<p id="lc-computing-p">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</p>
+								</div>
+								<div class="col-12">
+									<p onclick="changeLCComputing(this.id)" id="lc-computing" style="text-decoration: underline; padding: 0;">Read more</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -107,75 +128,54 @@
 					</div>
 				</div>
 			</div>
-			<div class="projects row section">
-				<h3 class="row"><a id="projects"></a>Projects</h3>
-				<div class="row justify-content-center">
-					<div class="col-12 col-lg-6 project column">
-						<a href="https://github.com/Manc-Y15/hustl.io">
-							<h5 class="col-12">hustl.io</h5>
-						</a>
-						<div class="container col-12">
-							<img src="src/hustlio.png" class="row" style="margin: 0;">
-							<div class="overlay">
-								<div class="col-12 col-lg-11">
-									<p id="hustl.io-p">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.</p>
-								</div>
-								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
-									<i class="fa-solid fa-caret-right" onclick="changeHustlio(this.id)" id="hustl.io"></i>		
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 project column">
-						<a href="#">
-							<h5 class="col-12">Asteroid Belt</h5>
-						</a>
-						<div class="container col-12">
-							<img src="src/asteroid.png" class="row" style="margin: 0;">
-							<div class="overlay">
-								<div class="col-12 col-lg-11">
-									<p id="asteroid-p">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
-								</div>
-								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
-									<i class="fa-solid fa-caret-right" onclick="changeAsteroid(this.id)" id="asteroid"></i>		
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 project column">
-						<a href="#">
-							<h5 class="col-12">lc-computing.com</h5>
-						</a>
-						<div class="container col-12">
-							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;">
-							<div class="overlay">
-								<div class="col-12 col-lg-11">
-									<p id="lc-computing-p">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</p>
-								</div>
-								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
-									<i class="fa-solid fa-caret-right" onclick="changeLCComputing(this.id)" id="lc-computing"></i>
-								</div>
-							</div>
-						</div>
+			<div class="experience row section">
+				<h3 class="row"><a id="experience"></a>Experience</h3>
+				<div class="col-12">
+					<div class="row experience_example">
+					<h5>Cloud Architecture DevOps</h5>
+					<p>
+						My experience mainly comes from shadow work with Cossy Cosmas of Diebold Nixdorf. I worked with Cossy across a six moth period, followed by occasional meetings which continue to the present. During these sessions, we discuss not only the skills which are required to convert university education to industrial applications, but also his responsibilities in the company and how they utilise cloud computing to their advantage. The focuses include:
+					</p>
+					<ul>
+						<li>Understanding the significant financial, operational and environmental benefits of cloud computing.</li>
+						<li>Reconciling my theoretical understanding of AWS Cloud technologies with direct exposure to a fully operational PCI DSS transaction processing service.</li>
+						<li>Exploring the pros and cons of a strict DevOps deployment methodology.</li>
+						<li>Developing a deeper understanding of DevOps concepts such as Infrastructure as Code and Configuration Management using Terraform and Puppet applications.</li>
+						<li>Learning coding concepts such as code branching, peer review, merging to master and deployment using GIT based code management tools.</li>
+						<li>Gaining an insight in to best-practice automation tools such as Jenkins and techniques such as Continuous Integration/Continuous Deployment.</li>
+						<li>Discussing emerging cloud technologies such as serverless computing and what benefits they bring to large organisations.</li>
+					</ul>
+					<p>
+						From these meetings, I have developed a greater understanding of how theoretical concepts, some of which I have covered in university modules, can be applied to a functioning company and be conveyed to less technical teams. The process of converting concepts to presentations to features is undoubtedly an important part of the development cycle, which I now have a greater understanding of in an industrial setting.
+					</p>
 					</div>
 				</div>
 			</div>
-			<div class="personal row">
+			<div class="intro row section">
+				<h3 class="row"><a id="intro"></a>About me</h3>
+				<div class="col-12 col-lg-9">
+					<p>My name is Louis Cullen, a student at The University of Manchester who is currently working towards a MSc in Computer Science. I am passionate, hardworking and collaborative with an urge to find out about all areas of the field. I excel in gaining experience through hands-on work, as well as independent research outside of the job. Working as part of a team for almost two years at Sainsbury's, I have a proven ability to communicate with and organise a team to ensure maximum efficiency, as well as the effective sharing of skills and knowledge through training colleagues and teaching students. While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result, whether that is during a university team coding project or a personal website. While there is no area which I can claim to be an expert in yet, I'm always eager to learn from courses and fellow computer scientists with 100% effort as I do so.</p>
+				</div>
+				<div class="d-none d-lg-block col-3" style="justify-content: center; display: flex;">
+					<img src="src/profile.jpg" style="height:15em;">
+				</div>
+			</div>
+			<div class="personal row section">
 				<h3 class="row"><a id="personal"></a>Personal</h3>
 				<div class="col-12">
 					<p>Having worked as part of many teams, from sports clubs to supermarkets, I thrive when collaborating with others. While sometimes I like to be left to work on a task without interruption, I also appreciate the benefits of sharing ideas in a group to produce the best results possible. I am happy to step up to lead in positions where I'm comfortable with the project's aim, but I'm equally happy to follow others' lead when I have less experience.</p>
 					<p>Aside from computer science, my main interests are music and sports. With the fantastic Manchester music scene on my doorstep, I often spend weekends out at concerts or shows with friends whenever possible. If football or Formula 1 are on, you can find me in front of the TV at home or out at a bar letting my competitive side show. I love social situations and like to spend as much time as possible with friends, whether that's doing work or relaxing.</p>
 				</div>
 			</div>
-			<div class="row" style="padding-top: 30px;">
-			<div class="col-6">
-				<p class="d-lg-none col-12 text-start">Please visit the desktop site for the best experience</p>
-			</div>
-			<div class="col-6">
-				<a href="mailto: cullen_louis@me.com"class="navitem d-lg-none col-12 text-end">cullen_louis@me.com</a>
-				<a href="https://github.com/LouisCullen"class="navitem d-lg-none col-12 text-end">github.com/LouisCullen</a>
-				<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-lg-none col-12 text-end">linkedin.com/in/louis-cullen</a>
-			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="mailto: cullen_louis@me.com"class="navitem d-lg-none col-12 text-end" class="col-12">cullen_louis@me.com</a>
+					<a href="https://github.com/LouisCullen"class="navitem d-lg-none col-12 text-end"class="col-12">github.com/LouisCullen</a>
+					<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-lg-none col-12 text-end" class="col-12">linkedin.com/in/louis-cullen</a>
+				</div>
+				<div class="col-12">
+					<p class="col-12 text-start">Please visit the desktop site for the best experience</p>
+				</div>
 			</div>
 		</div>
 	</div>
