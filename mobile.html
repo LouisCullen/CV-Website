@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="redirection-mobile.js"></script>
-	<script>
-		SA.redirection_mobile({
-			mobile_url : "lc-computing.com/mobile.html"
-		});
-	</script>
 	<meta charset="utf-8">
 	<meta name="theme-color" content="2a3a4b"/>
 	<meta name="viewport" content="initial-scale=1">
 	<title>Louis Cullen Computing</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
 	<script src="https://kit.fontawesome.com/2938df8840.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		var hustlio = ["Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.","This project was beneficial for me as it was my first experience of working as a team on a programming project. It taught me how important communication was, with our use of discord calls and regular meetings keeping the project on track, as well as the importance of being open about lack of knowledge and learning from other developers.","The technologies used were Python, Django, CSS and HTML. I also encountered Docker, SQLite and Postgres DB during development, though these were more the focus of other members of the team."]
@@ -43,33 +37,20 @@
 	</script>
 </head>
 <body style="background-color: #34495e; box-sizing: border-box;">
-	<nav class="navbartp navbar flex-row sticky-top justify-content-start">
-		<a href="mailto: cullen_louis@me.com"class="navitem d-block" style="position: absolute; right: 20px; top: 2em">cullen_louis@me.com</a>
-		<a href="https://github.com/LouisCullen"class="navitem d-block" style="position: absolute; right: 20px; top: 3.5em">github.com/LouisCullen</a>
-		<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-block" style="position: absolute; right: 20px; top: 5em">linkedin.com/in/louis-cullen</a>
-		
-		<div class="navbar-brand brand col-12 d-md-flex d-none justify-content-start"><img src="src/logo.png" style="width: 510px"></div>
-		<div class="navbar-brand brand col-4 d-md-none d-flex justify-content-start"><img src="src/logo2.png" style="width: 130px; margin-top: -0.6em; margin-bottom: 0.4em;"></div>
-		<div class="navbar-nav justify-content-center d-md-flex flex-wrap flex-row d-none">
-			<a class="navitem nav-link" href="#intro">Introduction</a>
-			<p class="navitem">|</p>
-			<a class="navitem nav-link" href="#experience">Experience</a>
-			<p class="navitem">|</p>
-			<a class="navitem nav-link" href="#education">Education</a>
-			<p class="navitem">|</p>
-			<a class="navitem nav-link" href="#projects">Projects</a>
-			<p class="navitem">|</p>
-			<a class="navitem nav-link" href="#personal">Personal</a>
-		</div>
+	<nav class="navbartp navbar flex-row sticky-top justify-content-between">
+		<div class="navbar-brand brand col-6 d-flex justify-content-start"><img src="src/logo2.png"></div>
+		<img class="face col-6 float-end" src="src/profile.jpg">
 	</nav>
 	<div class="container" style="max-width: 1000px; padding-top: 0;">
 		<div class="content row justify-content-center">
+			<div class="row justify-content-center"><h2>THIS MOBILE VERSION IS UNDER DEVELOPMENT</h2></div>
+			
 			<div class="intro row section">
 				<h3 class="row"><a id="intro"></a>Introduction</h3>
-				<div class="col-12 col-md-9">
+				<div class="col-12 col-lg-9">
 					<p>My name is Louis Cullen, a student at The University of Manchester who is currently working towards a MSc in Computer Science. I am passionate, hardworking and collaborative with an urge to find out about all areas of the field. I excel in gaining experience through hands-on work, as well as independent research outside of the job. Working as part of a team for almost two years at Sainsbury's, I have a proven ability to communicate with and organise a team to ensure maximum efficiency, as well as the effective sharing of skills and knowledge through training colleagues and teaching students. While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result, whether that is during a university team coding project or a personal website. While there is no area which I can claim to be an expert in yet, I'm always eager to learn from courses and fellow computer scientists with 100% effort as I do so.</p>
 				</div>
-				<div class="d-none d-md-block col-3" style="justify-content: center; display: flex;">
+				<div class="d-none d-lg-block col-3" style="justify-content: center; display: flex;">
 					<img src="src/profile.jpg" style="height:15em;">
 				</div>
 			</div>
@@ -99,29 +80,29 @@
 			<div class="education row section">
 				<h3 class="row"><a id="education"></a>Education</h3>
 				<div class="row school">
-					<div class="col-12 col-sm-7">
+					<div class="col-12 col-lg-7">
 						<h5>University of Manchester</h5><h6>2021-present</h6>
 						<p>I'm currently enrolled on MEng Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
 					</div>
-					<div class="col-12 col-sm-5">
+					<div class="col-12 col-lg-5">
 						<img src="src/uom2.png">
 					</div>
 				</div>
 				<div class="row school">
-					<div class="col-12 col-sm-7">
+					<div class="col-12 col-lg-7">
 						<h5>Therfield Sixth Form</h5><h6>2019-2021</h6>
 						<p>I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
 					</div>
-					<div class="col-12 col-sm-5">
+					<div class="col-12 col-lg-5">
 						<img src="src/therfield_crop.png">
 					</div>
 				</div>
 				<div class="row school">
-					<div class="col-12 col-sm-7">
+					<div class="col-12 col-lg-7">
 						<h5>Therfield School</h5><h6>2014-2019</h6>
 						<p>I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
 					</div>
-					<div class="col-12 col-sm-5">
+					<div class="col-12 col-lg-5">
 						<img src="src/therfield_crop.png">
 					</div>
 				</div>
@@ -129,49 +110,49 @@
 			<div class="projects row section">
 				<h3 class="row"><a id="projects"></a>Projects</h3>
 				<div class="row justify-content-center">
-					<div class="col-8 col-lg-6 project column">
+					<div class="col-12 col-lg-6 project column">
 						<a href="https://github.com/Manc-Y15/hustl.io">
 							<h5 class="col-12">hustl.io</h5>
 						</a>
 						<div class="container col-12">
 							<img src="src/hustlio.png" class="row" style="margin: 0;">
 							<div class="overlay">
-								<div class="col-11">
+								<div class="col-12 col-lg-11">
 									<p id="hustl.io-p">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation the inter-user friend system.</p>
 								</div>
-								<div class="d-block col-1" style="font-size: 1.5em">
+								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
 									<i class="fa-solid fa-caret-right" onclick="changeHustlio(this.id)" id="hustl.io"></i>		
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-8 col-lg-6 project column float-end float-lg-none">
+					<div class="col-12 col-lg-6 project column">
 						<a href="#">
 							<h5 class="col-12">Asteroid Belt</h5>
 						</a>
 						<div class="container col-12">
 							<img src="src/asteroid.png" class="row" style="margin: 0;">
 							<div class="overlay">
-								<div class="col-11">
+								<div class="col-12 col-lg-11">
 									<p id="asteroid-p">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
 								</div>
-								<div class="d-block col-1" style="font-size: 1.5em">
+								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
 									<i class="fa-solid fa-caret-right" onclick="changeAsteroid(this.id)" id="asteroid"></i>		
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-8 col-lg-6 project column">
+					<div class="col-12 col-lg-6 project column">
 						<a href="#">
 							<h5 class="col-12">lc-computing.com</h5>
 						</a>
 						<div class="container col-12">
 							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;">
 							<div class="overlay">
-								<div class="col-11">
+								<div class="col-12 col-lg-11">
 									<p id="lc-computing-p">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</p>
 								</div>
-								<div class="d-block col-1" style="font-size: 1.5em">
+								<div class="d-none d-lg-block col-1" style="font-size: 1.5em">
 									<i class="fa-solid fa-caret-right" onclick="changeLCComputing(this.id)" id="lc-computing"></i>
 								</div>
 							</div>
@@ -185,6 +166,16 @@
 					<p>Having worked as part of many teams, from sports clubs to supermarkets, I thrive when collaborating with others. While sometimes I like to be left to work on a task without interruption, I also appreciate the benefits of sharing ideas in a group to produce the best results possible. I am happy to step up to lead in positions where I'm comfortable with the project's aim, but I'm equally happy to follow others' lead when I have less experience.</p>
 					<p>Aside from computer science, my main interests are music and sports. With the fantastic Manchester music scene on my doorstep, I often spend weekends out at concerts or shows with friends whenever possible. If football or Formula 1 are on, you can find me in front of the TV at home or out at a bar letting my competitive side show. I love social situations and like to spend as much time as possible with friends, whether that's doing work or relaxing.</p>
 				</div>
+			</div>
+			<div class="row" style="padding-top: 30px;">
+			<div class="col-6">
+				<p class="d-lg-none col-12 text-start">Please visit the desktop site for the best experience</p>
+			</div>
+			<div class="col-6">
+				<a href="mailto: cullen_louis@me.com"class="navitem d-lg-none col-12 text-end">cullen_louis@me.com</a>
+				<a href="https://github.com/LouisCullen"class="navitem d-lg-none col-12 text-end">github.com/LouisCullen</a>
+				<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-lg-none col-12 text-end">linkedin.com/in/louis-cullen</a>
+			</div>
 			</div>
 		</div>
 	</div>

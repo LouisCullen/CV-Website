@@ -37,7 +37,6 @@ h3 a{
 .brand{
 	color: #ecf0f1;
 	margin: 0;
-	padding-top: 1em;
 }
 
 .navitem {
@@ -54,7 +53,7 @@ h3 a{
 	padding-bottom: 0.1em;
 }
 
-@supports (backdrop-filter: blur(14px)){
+/*@supports (backdrop-filter: blur(14px)){
 	.navbartp {
 		background: rgba(1, 1, 1, 0.2);
 		backdrop-filter: blur(14px);
@@ -85,64 +84,63 @@ h3 a{
 	.brand img{
 		 width: 40vw;
 	}
+}*/
+
+.navbartp{
+	background-color: #2a3a4b;
+	opacity: 1;
+	backdrop-filter: none;
+	margin: 0;
+	padding: 0.5em;
+	width: 100vw;
 }
 
-@supports not (backdrop-filter: blur(14px)){
-	.navbartp{
-		background-color: #2a3a4b;
-		opacity: 1;
-		backdrop-filter: none;
-		margin: 0;
-		width: 100vw;
-	}
 
-	.brand{
-		padding-top: 4vw;
-		padding-bottom: 4vw;
-	}
+.brand img{
+	width: 150px;
+}
 
-	.brand img{
-		width: 70vw;
-	}
+.section{
+	padding-top: 1.5em;
+}
 
-	.section{
-		padding-top: 1.5em;
-	}
-
-	.overlay{
-		opacity: 1;
-		position: relative;
-		text-decoration: none;
-		padding-bottom: 50px;
-	}
+.overlay{
+	opacity: 1;
+	position: relative;
+	text-decoration: none;
+	padding-bottom: 50px;
+}
 
 
-	a{
-		font-size: 3.5vw;
-	}
+a{
+	font-size: 3.5vw;
+}
 
 /*	.navbar-nav{
-		display: none;
-	}*/
+	display: none;
+}*/
 
-	h3{
-		font-size: 6vw;
-	}
-
-	h5{
-		font-size: 5vw;
-	}
-
-	h6{
-		font-size: 4.5vw;
-	}
-
-	p{
-		font-size: 4vw;
-	}
-
+h3{
+	font-size: 6vw;
 }
 
+h5{
+	font-size: 5vw;
+}
+
+h6{
+	font-size: 4.5vw;
+}
+
+p{
+	font-size: 4vw;
+}
+
+.navbartp .face{
+	object-fit: cover;
+	width: 100px;
+	height: 100px;
+}
 
 .navbartp a{
 	text-decoration: none;
@@ -159,8 +157,13 @@ h3 a{
 	color: #ecf0f1;
 }
 
-.content p{
-	color: #bdc3c7;;
+.content p, ul{
+	color: #bdc3c7;
+}
+
+ul{
+	list-style-position: inside;
+	margin-left: 2vw;
 }
 
 .school{
@@ -195,6 +198,7 @@ body{
 }
 
 .project p{
+	padding-top: 1em;
 	margin: 0;
 }
 
