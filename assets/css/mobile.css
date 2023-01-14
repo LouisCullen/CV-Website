@@ -14,7 +14,7 @@ h3{
 
 h3 a{
 	position: absolute;
-	top: -157px;
+	top: -90px;
 }
 
 .section{
@@ -23,6 +23,8 @@ h3 a{
 	border-bottom-style: solid;
 	padding-bottom: 1em;
 	margin-bottom: 2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 
 .education h5,h6{
@@ -43,20 +45,16 @@ h3 a{
 .brand .logo{
 	width: 160px;
 	overflow: hidden;
-	padding-top: 5px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 }
 
 .brand .logo img{
 	width: 190%;
 }
 
-.navitem {
-	padding-right: 2em;
-	padding-left: 2em;
+.socials {
 	color: #bdc3c7;
-	box-sizing: border-box;
-	padding: var(--bs-nav-link-padding-y);
-	margin: 0;
 }
 
 .vertical{
@@ -64,48 +62,27 @@ h3 a{
 	padding-bottom: 0.1em;
 }
 
-/*@supports (backdrop-filter: blur(14px)){
-	.navbartp {
-		background: rgba(1, 1, 1, 0.2);
-		backdrop-filter: blur(14px);
-		margin: 0;
-		padding-left: 1em;
-	}
-	.overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	align-items: center;
-	text-align: justify;
-	display: flex;
-	}
-
-	.overlay p{
-		padding: 1em;
-	}
-
-	.projects .container:hover .overlay{
-		opacity: 1;
-		backdrop-filter: blur(10px);
-	}
-
-	.brand img{
-		 width: 40vw;
-	}
-}*/
-
-.navbartp{
-	background-color: #2a3a4b;
+.navbar{
 	opacity: 1;
-	backdrop-filter: none;
 	margin: 0;
 	padding: 0.5em;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-	width: 100vw;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #34495e;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.navbar .navbar-collapse{
+	margin-left: -20px;
+	top: 66px;
+	background-color: #34495e;
+	z-index: 1020;
+	position: absolute;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.navbar .nav-link{
+	color: #ecf0f1;
 }
 
 .overlay{
@@ -119,32 +96,38 @@ a{
 	font-size: 3.5vw;
 }
 
+h1{
+	font-size: 6vw;
+}
+
 h3{
-	font-size: 5vw;
+	font-size: 6vw;
 }
 
 h5{
-	font-size: 4.5vw;
+	font-size: 5.5vw;
 }
 
 h6{
-	font-size: 4vw;
+	font-size: 4.5vw;
 }
 
 p, ul{
-	font-size: 3.2vw;
+	font-size: 4vw;
 }
 
-.navbartp .face{
+
+.welcome .face{
 	object-fit: cover;
-	width: 45px;
-	height: 45px;
+	width: 175px;
+	height: 175px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
+	margin: 10px;
 }
 
-.navbartp .face img{
+.welcome .face img{
 	position: relative;
 	left: -25%;
 	top: -10%;
@@ -154,17 +137,7 @@ p, ul{
 	width: 150%;
 }
 
-.navbartp a{
-	text-decoration: none;
-}
-
-.navbartp a:hover{
-	text-decoration: underline;
-	color: #ecf0f1;
-}
-
 .content{
-	padding: 2vw;
 	padding-top: 25px;
 	color: #ecf0f1;
 }
@@ -216,6 +189,12 @@ body{
 	position: relative;
 	padding: 0;
 	overflow: hidden;
+}
+
+.welcome p{
+	color: #ecf0f1;
+	text-align: justify;
+	padding-top: 10px;
 }
 
 
