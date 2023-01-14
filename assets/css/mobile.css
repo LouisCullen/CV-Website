@@ -7,12 +7,12 @@ a[x-apple-data-detectors] {
     line-height: inherit !important;
 }
 
-h3{
+h2{
 	padding-bottom: 0.5em;
 	position: relative;
 }
 
-h3 a{
+h2 a{
 	position: absolute;
 	top: -90px;
 }
@@ -27,7 +27,7 @@ h3 a{
 	padding-right: 0.5em;
 }
 
-.education h5,h6{
+.education h3,h4{
 	display: inline-block;
 	padding-right: 1em;
 }
@@ -100,15 +100,15 @@ h1{
 	font-size: 6vw;
 }
 
-h3{
+h2{
 	font-size: 6vw;
 }
 
-h5{
+h3{
 	font-size: 5.5vw;
 }
 
-h6{
+h4{
 	font-size: 4.5vw;
 }
 
