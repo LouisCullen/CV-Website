@@ -43,35 +43,128 @@
 		}
 	</script>
 </head>
-<body style="background-color: #34495e; box-sizing: border-box;">
+<body style="background-color: #353b48; box-sizing: border-box;">
 	<nav class="navbartp navbar flex-row sticky-top justify-content-start">
 		<a href="mailto: cullen_louis@me.com"class="navitem d-block" style="position: absolute; right: 20px; top: 2em">cullen_louis@me.com</a>
 		<a href="https://github.com/LouisCullen"class="navitem d-block" style="position: absolute; right: 20px; top: 3.5em">github.com/LouisCullen</a>
 		<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-block" style="position: absolute; right: 20px; top: 5em">linkedin.com/in/louis-cullen</a>
 		
-		<div class="navbar-brand brand col-12 d-md-flex d-none justify-content-start"><img src="src/logo.png" alt="Logo" style="width: 510px"></div>
-		<div class="navbar-brand brand col-4 d-md-none d-flex justify-content-start"><img src="src/logo2.png" alt="Logo" style="width: 130px; margin-top: -0.6em; margin-bottom: 0.4em;"></div>
+		<div class="navbar-brand brand col-12 d-md-flex d-none justify-content-start"><a href="#"><img src="src/logo.png" alt="Logo" style="width: 510px"></a></div>
+		<div class="navbar-brand brand col-4 d-md-none d-flex justify-content-start"><a href="#"><img src="src/logo2.png" alt="Logo" style="width: 130px; margin-top: -0.6em; margin-bottom: 0.4em;"></a></div>
 		<div class="navbar-nav justify-content-center d-md-flex flex-wrap flex-row d-none">
-			<a class="navitem nav-link" href="#intro">Introduction</a>
-			<p class="navitem">|</p>
-			<a class="navitem nav-link" href="#experience">Experience</a>
+			<a class="navitem nav-link" href="#projects">Projects</a>
 			<p class="navitem">|</p>
 			<a class="navitem nav-link" href="#education">Education</a>
 			<p class="navitem">|</p>
-			<a class="navitem nav-link" href="#projects">Projects</a>
+			<a class="navitem nav-link" href="#experience">Experience</a>
 			<p class="navitem">|</p>
 			<a class="navitem nav-link" href="#personal">Personal</a>
 		</div>
 	</nav>
-	<div class="container" style="max-width: 1000px; padding-top: 0;">
+	<div class="container" style="max-width: 1200px; padding-top: 0;">
 		<div class="content row justify-content-center">
-			<div class="intro row section">
-				<h2 class="row"><a id="intro"></a>Introduction</h2>
-				<div class="col-12 col-md-9">
-					<p>My name is Louis Cullen, a student at The University of Manchester who is currently working towards a MSc in Computer Science. I am passionate, hardworking and collaborative with an urge to find out about all areas of the field. I excel in gaining experience through hands-on work, as well as independent research outside of the job. Working as part of a team for almost two years at Sainsbury's, I have a proven ability to communicate with and organise a team to ensure maximum efficiency, as well as the effective sharing of skills and knowledge through training colleagues and teaching students. While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result, whether that is during a university team coding project or a personal website. While there is no area which I can claim to be an expert in yet, I'm always eager to learn from courses and fellow computer scientists with 100% effort as I do so.</p>
+			<div class="d-flex welcome row section justify-content-between" style="margin-top: 23vh;margin-bottom: 23vh;">
+				<div class="d-flex col-8 align-items-center">
+					<span>
+						<h1><b>I'm Louis, <br>a Computer Science student based in Manchester/London</b></h1>
+						<p>I have a keen eye for problem solving and love adding creative flourishes, with a particular interest in software development. Contact me for information about myself, my projects or computer science in general!</p>
+					</span>
 				</div>
-				<div class="d-none d-md-block col-3" style="justify-content: center; display: flex;">
-					<img src="src/profile.jpg" style="height:15em;" alt="Louis Cullen">
+				<div class="d-flex col-4 align-items-center justify-content-center">
+					<div class="face">
+						<img src="src/profile.jpg" alt="Louis Cullen">
+					</div>
+				</div>
+			</div>
+			<div class="projects row section">
+				<div class="d-flex flex-row justify-content-start align-items-center">
+					<h2 class="pe-4"><a id="projects"></a>Projects</h2>
+					<p>While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result whether that's during a university team coding project or a personal website.</p>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-8 col-lg-6 project column">
+						<a href="https://github.com/Manc-Y15/hustl.io">
+							<h3 class="col-12">hustl.io</h3>
+						</a>
+						<div class="project-container container col-12">
+							<img src="src/hustlio.png" class="row" style="margin: 0;" alt="Team-based web development">
+							<div class="overlay">
+								<div class="col-11">
+									<p id="hustl.io-p">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation of the inter-user friend system.</p>
+								</div>
+								<div class="d-block col-1" style="font-size: 1.5em">
+									<i class="fa-solid fa-caret-right" onclick="changeHustlio(this.id)" id="hustl.io"></i>		
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-8 col-lg-6 project column float-end float-lg-none">
+						<a href="#">
+							<h3 class="col-12">Asteroid Belt</h3>
+						</a>
+						<div class="project-container container col-12">
+							<img src="src/asteroid.png" class="row" style="margin: 0;" alt="Personal game development">
+							<div class="overlay">
+								<div class="col-11">
+									<p id="asteroid-p">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
+								</div>
+								<div class="d-block col-1" style="font-size: 1.5em">
+									<i class="fa-solid fa-caret-right" onclick="changeAsteroid(this.id)" id="asteroid"></i>		
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-8 col-lg-6 project column">
+						<a href="#">
+							<h3 class="col-12">lc-computing.com</h3>
+						</a>
+						<div class="project-container container col-12">
+							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;" alt="Personal web development">
+							<div class="overlay">
+								<div class="col-11">
+									<p id="lc-computing-p">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</p>
+								</div>
+								<div class="d-block col-1" style="font-size: 1.5em">
+									<i class="fa-solid fa-caret-right" onclick="changeLCComputing(this.id)" id="lc-computing"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="education row section justify-content-center">
+				<div class="d-flex flex-row justify-content-start align-items-center">
+					<h2 class="pe-4"><a id="education"></a>Education</h2>
+					<p>While there's no area in which I can claim to be an expert yet, I'm an eager learner who approaches every topic with an open mind and a determination to understand the concept.</p>
+				</div>
+				<div style="max-width: 1150px;">
+					<div class="row school">
+							<div class="col-12 col-sm-7">
+								<h3>University of Manchester</h3><h4>2021-present</h4>
+								<p>I'm currently enrolled on MEng Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
+							</div>
+							<div class="col-12 col-sm-5 justify-content-end">
+								<img src="src/uom2.png" alt="University of Manchester">
+							</div>
+					</div>
+					<div class="row school" style="margin-left: auto;">
+						<div class="col-12 col-sm-5">
+							<img src="src/therfield_crop.png" alt="Therfield School">
+						</div>
+						<div class="col-12 col-sm-7">
+							<h3>Therfield Sixth Form</h3><h4>2019-2021</h4>
+							<p>I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
+						</div>
+					</div>
+					<div class="row school">
+						<div class="col-12 col-sm-7">
+							<h3>Therfield School</h3><h4>2014-2019</h4>
+							<p>I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
+						</div>
+						<div class="col-12 col-sm-5">
+							<img src="src/therfield_crop.png" alt="Therfield School">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="experience row section">
@@ -94,89 +187,6 @@
 					<p>
 						From these meetings, I have developed a greater understanding of how theoretical concepts, some of which I have covered in university modules, can be applied to a functioning company and be conveyed to less technical teams. The process of converting concepts to presentations to features is undoubtedly an important part of the development cycle, which I now have a greater understanding of in an industrial setting.
 					</p>
-					</div>
-				</div>
-			</div>
-			<div class="education row section">
-				<h2 class="row"><a id="education"></a>Education</h2>
-				<div class="row school">
-					<div class="col-12 col-sm-7">
-						<h3>University of Manchester</h3><h4>2021-present</h4>
-						<p>I'm currently enrolled on MEng Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
-					</div>
-					<div class="col-12 col-sm-5">
-						<img src="src/uom2.png" alt="University of Manchester">
-					</div>
-				</div>
-				<div class="row school">
-					<div class="col-12 col-sm-7">
-						<h3>Therfield Sixth Form</h3><h4>2019-2021</h4>
-						<p>I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
-					</div>
-					<div class="col-12 col-sm-5">
-						<img src="src/therfield_crop.png" alt="Therfield School">
-					</div>
-				</div>
-				<div class="row school">
-					<div class="col-12 col-sm-7">
-						<h3>Therfield School</h3><h4>2014-2019</h4>
-						<p>I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
-					</div>
-					<div class="col-12 col-sm-5">
-						<img src="src/therfield_crop.png" alt="Therfield School">
-					</div>
-				</div>
-			</div>
-			<div class="projects row section">
-				<h2 class="row"><a id="projects"></a>Projects</h2>
-				<div class="row justify-content-center">
-					<div class="col-8 col-lg-6 project column">
-						<a href="https://github.com/Manc-Y15/hustl.io">
-							<h3 class="col-12">hustl.io</h3>
-						</a>
-						<div class="container col-12">
-							<img src="src/hustlio.png" class="row" style="margin: 0;" alt="Team-based web development">
-							<div class="overlay">
-								<div class="col-11">
-									<p id="hustl.io-p">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation of the inter-user friend system.</p>
-								</div>
-								<div class="d-block col-1" style="font-size: 1.5em">
-									<i class="fa-solid fa-caret-right" onclick="changeHustlio(this.id)" id="hustl.io"></i>		
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-8 col-lg-6 project column float-end float-lg-none">
-						<a href="#">
-							<h3 class="col-12">Asteroid Belt</h3>
-						</a>
-						<div class="container col-12">
-							<img src="src/asteroid.png" class="row" style="margin: 0;" alt="Personal game development">
-							<div class="overlay">
-								<div class="col-11">
-									<p id="asteroid-p">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</p>
-								</div>
-								<div class="d-block col-1" style="font-size: 1.5em">
-									<i class="fa-solid fa-caret-right" onclick="changeAsteroid(this.id)" id="asteroid"></i>		
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-8 col-lg-6 project column">
-						<a href="#">
-							<h3 class="col-12">lc-computing.com</h3>
-						</a>
-						<div class="container col-12">
-							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;" alt="Personal web development">
-							<div class="overlay">
-								<div class="col-11">
-									<p id="lc-computing-p">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</p>
-								</div>
-								<div class="d-block col-1" style="font-size: 1.5em">
-									<i class="fa-solid fa-caret-right" onclick="changeLCComputing(this.id)" id="lc-computing"></i>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

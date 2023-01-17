@@ -10,6 +10,8 @@ a[x-apple-data-detectors] {
 h2{
 	padding-bottom: 0.5em;
 	position: relative;
+	font-weight: bold;
+	padding-bottom: 0.5em !important;
 }
 
 h2 a{
@@ -17,23 +19,54 @@ h2 a{
 	top: -157px;
 }
 
+h4{
+	font-size: 1em;
+}
+
 .section{
-	border-bottom: 2px;
+/*	border-bottom: 2px;
 	border-color: #bdc3c7;
-	border-bottom-style: solid;
+	border-bottom-style: solid;*/
 	padding-bottom: 2em;
-	margin-bottom: 3em;
+	margin-bottom: 6em;
+	margin-top: 50px;
+}
+
+.section h2{
+	margin: 0;
 }
 
 .education h3,h4{
 	display: inline-block;
-	padding-right: 1em;
+	padding-right: 0.5em;
+}
+
+.education p{
+	padding: 0;
 }
 
 .education img{
 	width: 100%;
+
+
+}.welcome .face{
+	object-fit: cover;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50px;
 }
 
+.welcome .face img{
+	position: relative;
+	left: -25%;
+	top: -10%;
+	display: inline;
+	margin: 0 auto;
+	height: auto;
+	width: 150%;
+}
 
 
 .brand{
@@ -57,11 +90,12 @@ h2 a{
 }
 
 .navbartp {
-	background: rgba(1, 1, 1, 0.2);
+	background: linear-gradient(to bottom, rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.2));
 	backdrop-filter: blur(14px);
 	margin: 0;
 	padding-left: 1em;
 }
+
 .overlay{
 position: absolute;
 top: 0;
@@ -79,24 +113,12 @@ display: flex;
 	font-size: 1pc;
 }
 
-.projects .container:hover .overlay{
-	opacity: 1;
-	backdrop-filter: blur(10px);
-}
-
-
 .navbartp a{
 	text-decoration: none;
 }
 
 .navbartp a:hover{
 	text-decoration: underline;
-	color: #ecf0f1;
-}
-
-.content{
-	padding: 2vw;
-	padding-top: 25px;
 	color: #ecf0f1;
 }
 
@@ -110,12 +132,9 @@ ul{
 }
 
 .school{
-	padding-bottom: 1.5em;
+	margin-top: 1.5em;
 	align-items: center;
-}
-
-.school p{
-	padding-top: 0.5em;
+	max-width: 1000px;
 }
 
 
@@ -138,8 +157,10 @@ body{
 
 .project{
 	padding: 10px;
-	max-width: 435px;
+	max-width: 500px;
 	min-width: 415px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 }
 
 .project p{
@@ -155,5 +176,24 @@ body{
 	padding: 0;
 }
 
+.row{
+	padding: 0;
+}
 
+.content{
+	padding: 2vw;
+	padding-top: 25px;
+	color: #ecf0f1;
+}
 
+.project-container{
+	overflow: hidden;
+	border-radius: 25px;
+	position: relative;
+	padding: 0;
+}
+
+.project-container:hover .overlay{
+	opacity: 1;
+	backdrop-filter: blur(10px);
+}
