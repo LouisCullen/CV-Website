@@ -41,15 +41,26 @@ h4{
 	padding-right: 0.5em;
 }
 
-.education p{
+.education-details{
 	padding: 0;
 }
 
 .education img{
 	width: 100%;
+}
 
+.welcome{
+	margin-top: 23vh;
+	margin-bottom: 23vh;
+}
 
-}.welcome .face{
+@media (max-width: 768px){
+	.welcome{
+		margin: 0;
+	}
+}
+
+.welcome .face{
 	object-fit: cover;
 	width: 250px;
 	height: 250px;
@@ -60,12 +71,11 @@ h4{
 
 .welcome .face img{
 	position: relative;
-	left: -25%;
-	top: -10%;
+	top: -30%;
 	display: inline;
 	margin: 0 auto;
 	height: auto;
-	width: 150%;
+	width: 110%;
 }
 
 
