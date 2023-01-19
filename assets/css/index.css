@@ -144,10 +144,11 @@ ul{
 }
 
 .school{
-	margin: 3em;
+	margin-top: 3em;
+	margin-bottom: 3em;
 	padding: 1.5em !important;
 	align-items: center;
-	max-width: 800px;
+	max-width: 700px;
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 	border-radius: 25px;
 }
@@ -186,10 +187,6 @@ body{
 	cursor: pointer;
 }
 
-.projects .container{
-	position: relative;
-	padding: 0;
-}
 
 .row{
 	padding: 0;
@@ -218,4 +215,8 @@ body{
 	border-bottom: 2px;
 	border-color: #bdc3c7;
 	border-bottom-style: solid;
+}
+
+.experience_example{
+	margin-top: 20px;
 }
