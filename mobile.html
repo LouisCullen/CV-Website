@@ -37,9 +37,9 @@
 		}
 	</script>
 </head>
-<body style="background-color: #34495e; box-sizing: border-box;">
+<body style="background-color: #353b48; box-sizing: border-box;">
 <nav class="navbar navbar-expand-lg sticky-top" style="z-index: 1;">
-  <div class="container-fluid">
+  <div class="container-fluid align-items-center">
     <a class="navbar-brand brand" href="#"><div class="logo"><img src="src/logo.png" alt="Logo"></div></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
       <i style="color: #ecf0f1;" class="fa-solid fa-bars"></i>
@@ -62,7 +62,7 @@
     </div>
   </div>
 </nav>
-	<div class="container" style="max-width: 1000px; padding-top: 0;">
+	<div class="container" style="max-width: 500px; padding-top: 0;">
 		<div class="content row justify-content-center">
 			<div class="welcome row section justify-content-center">
 				<div class="col-12">
@@ -132,7 +132,6 @@
 				</div>
 			</div>
 			<div class="education row section justify-content-center">
-			<div class="education row section justify-content-center">
 				<div class="title-row d-flex flex-row justify-content-start align-items-center">
 					<h2 class="pe-4"><a id="education"></a>Education</h2>
 				</div>
@@ -142,7 +141,7 @@
 						<h3>University of Manchester</h3><h4>2021-present</h4>
 						<p>I'm currently enrolled on MEng Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
 					</div>
-					<div class="col-12 col-lg-5">
+					<div class="col-12 col-lg-5 justify-content-center d-flex">
 						<img src="src/uom2.png" alt="University of Manchester">
 					</div>
 				</div>
@@ -151,7 +150,7 @@
 						<h3>Therfield Sixth Form</h3><h4>2019-2021</h4>
 						<p>I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
 					</div>
-					<div class="col-12 col-lg-5">
+					<div class="col-12 col-lg-5 justify-content-center d-flex">
 						<img src="src/therfield_crop.png" alt="Therfield School">
 					</div>
 				</div>
@@ -160,7 +159,7 @@
 						<h3>Therfield School</h3><h4>2014-2019</h4>
 						<p>I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
 					</div>
-					<div class="col-12 col-lg-5">
+					<div class="col-12 col-lg-5 justify-content-center d-flex">
 						<img src="src/therfield_crop.png" alt="Therfield School">
 					</div>
 				</div>
@@ -170,23 +169,42 @@
 					<h2 class="row"><a id="experience"></a>Experience</h2>
 				</div>
 				<div class="col-12">
-					<div class="row experience_example">
-					<h3>Cloud Architecture DevOps</h3>
-					<p>
-						My experience mainly comes from shadow work with Cossy Cosmas of Diebold Nixdorf. I worked with Cossy across a six moth period, followed by occasional meetings which continue to the present. During these sessions, we discuss not only the skills which are required to convert university education to industrial applications, but also his responsibilities in the company and how they utilise cloud computing to their advantage. The focuses include:
-					</p>
-					<ul>
-						<li>Understanding the significant financial, operational and environmental benefits of cloud computing.</li>
-						<li>Reconciling my theoretical understanding of AWS Cloud technologies with direct exposure to a fully operational PCI DSS transaction processing service.</li>
-						<li>Exploring the pros and cons of a strict DevOps deployment methodology.</li>
-						<li>Developing a deeper understanding of DevOps concepts such as Infrastructure as Code and Configuration Management using Terraform and Puppet applications.</li>
-						<li>Learning coding concepts such as code branching, peer review, merging to master and deployment using GIT based code management tools.</li>
-						<li>Gaining an insight in to best-practice automation tools such as Jenkins and techniques such as Continuous Integration/Continuous Deployment.</li>
-						<li>Discussing emerging cloud technologies such as serverless computing and what benefits they bring to large organisations.</li>
-					</ul>
-					<p>
-						From these meetings, I have developed a greater understanding of how theoretical concepts, some of which I have covered in university modules, can be applied to a functioning company and be conveyed to less technical teams. The process of converting concepts to presentations to features is undoubtedly an important part of the development cycle, which I now have a greater understanding of in an industrial setting.
-					</p>
+					<div class="row experience-example">
+						<h3>Cloud Architecture DevOps</h3>
+						<p>Shadowing Senior Technical Cloud Architect Cossy Cosmas for a six month period and subsequent occasional meetings introduced me to how cloud computing is used in a financial organisation.</p>
+						<div class="experience-container container col mx-2">
+							<img src="src/git.png" class="row" style="margin: 0;" alt="Git">
+							<div class="overlay d-none d-lg-flex">
+								<div class="col-12">
+									<ul>
+										<li>Covered coding concepts such as code branching, peer review and deployment using GIT based code management tools.</li>
+										<li>Gained an insight in to best-practice automation tools such as Jenkins and techniques such as Continuous Integration/Continuous Deployment.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="experience-container container col mx-2">
+							<img src="src/aws.png" class="row" style="margin: 0;" alt="AWS">
+							<div class="overlay d-none d-lg-flex">
+								<div class="col-12">
+									<ul>
+										<li>Evaluated the significant financial, operational and environmental benefits of cloud computing.</li>
+										<li>Reconciled my theoretical understanding of AWS Cloud technologies with direct exposure to a fully operational PCI DSS transaction processing service.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="experience-container container col mx-2">
+							<img src="src/devops.png" class="row" style="margin: 0;" alt="DevOps">
+							<div class="overlay d-none d-lg-flex">
+								<div class="col-12">
+									<ul>
+										<li>Explored the pros and cons of a strict DevOps deployment methodology.</li>
+										<li>Developed a deeper understanding of DevOps concepts such as Infrastructure as Code and Configuration Management using Terraform and Puppet applications.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -194,15 +212,31 @@
 				<div class="title-row d-flex flex-row justify-content-start align-items-center">
 					<h2 class="row"><a id="personal"></a>Personal</h2>
 				</div>
-				<div class="col-12 experience_example">
-					<p>Having worked as part of many teams, from sports clubs to supermarkets, I thrive when collaborating with others. While sometimes I like to be left to work on a task without interruption, I also appreciate the benefits of sharing ideas in a group to produce the best results possible. I am happy to step up to lead in positions where I'm comfortable with the project's aim, but I'm equally happy to follow others' lead when I have less experience.</p>
-					<p>Aside from computer science, my main interests are music and sports. With the fantastic Manchester music scene on my doorstep, I often spend weekends out at concerts or shows with friends whenever possible. If football or Formula 1 are on, you can find me in front of the TV at home or out at a bar letting my competitive side show. I love social situations and like to spend as much time as possible with friends, whether that's doing work or relaxing.</p>
+				<div class="col-12 personal-example d-flex align-items-center">
+					<img class="col-2" src="src/football.png" alt="Football">
+					<div class="col personal-content">
+						<p>Having played football since 6 years old, the beautiful game has always been a major part of my life. Growing with the Oxshott Royals team from u7 to u15, I loved being a team player and taking on leadership roles when required.</p>
+						<p>As a passionate Chelsea fan, I love watching the games whenever possible, even if they don't always produce the result we want.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
+				<div class="col-12 personal-example d-flex align-items-center">
+					<img class="col-2" src="src/f1.png" alt="F1">
+					<div class="col personal-content felx align-items-center">
+						<p>From watching F1 with my dad many years ago, a love for the speed and noise of such highly engineered cars was inevitable. I rarely miss a race and relish the buzz of the home fans at the British Grand Prix.</p>
+						<p>Despite no specific team alliance, I love an underdog story and can't wait to see the future of the sport coming through the ranks to prove themselves against the best.</p>
+					</div>
+				</div>
+				<div class="col-12 personal-example d-flex align-items-center">
+					<img class="col-2" src="src/music.png" alt="Music">
+					<div class="col personal-content felx align-items-center">
+						<p>With the fantastic Manchester music scene on my doorstep, I often spend weekends out at concerts or shows with friends whenever possible.</p>
+						<p>If I'm not out at a live show, I'll almost always have a song scoring my day-to-day life, particularly when working on a project. Genres can range from rock and indie to house and garage, with some particularly strange ones scattered through my playlists!</p>
+					</div>
+				</div>
+			<div class="row justify-content-center pt-5">
 				<div class="col-12">
-					<a href="mailto: cullen_louis@me.com"class="socials col-12 text-end" class="col-12">cullen_louis@me.com</a><br>
 					<a href="https://github.com/LouisCullen"class="socials col-12 text-end"class="col-12">github.com/LouisCullen</a><br>
+					<a href="mailto: cullen_louis@icloud.com"class="socials col-12 text-end" class="col-12">cullen_louis@icloud.com</a><br>
 					<a href="https://www.linkedin.com/in/louis-cullen"class="socials col-12 text-end" class="col-12">linkedin.com/in/louis-cullen</a>
 				</div>
 			</div>
