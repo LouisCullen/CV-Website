@@ -43,10 +43,10 @@ h2 a{
 }
 
 .brand .logo{
-	width: 160px;
+	width: 200px;
 	overflow: hidden;
-	padding-top: 12px;
-	padding-bottom: 8px;
+	padding-top: 14px;
+	padding-bottom: 6px;
 }
 
 .brand .logo img{
@@ -242,4 +242,13 @@ body{
 
 .experience-container img{
 	width: 100%;
+}
+
+.navbar-collapse a{
+	font-size: 13px;
+}
+
+.navbar-collapse .icon{
+	font-size: 25px;
+	color: #ecf0f1;
 }
