@@ -224,7 +224,13 @@ body{
 	color: #ecf0f1;
 }
 
-.project-container{
+.project-container h3{
+	font-size: 2em;
+	font-weight: bold;
+	padding-left: 1em;
+}
+
+.project-container, .skill-container{
 	z-index: 0;
 	overflow: hidden;
 	border-radius: 25px;
@@ -240,7 +246,7 @@ body{
 	height: 100%;
 }
 
-.experience .project-container{
+.skill-container{
 	display: flex;
 	background-color: #353b48;
 	align-items: center;
@@ -248,18 +254,53 @@ body{
 	max-height: 330px;
 }
 
-.experience .project-container img{
+.skill-container img{
+	object-fit: contain;
 	width: 100%;
+	height: 100%;
 }
 
-.project-container:hover .overlay{
+.skill-container:hover .overlay{
 	opacity: 1;
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.project-container ul{
+.project-container .overlay{
+	opacity: 1;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project-container:hover .overlay{
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.carousel-nav{
+	display: none;
+}
+
+.project-title{
+	display: block;
+	padding-left: 1;
+}
+
+.project-container:hover .project-title{
+	display: none;
+}
+
+.project-container:hover .carousel-nav{
+	display: block;
+}
+
+.project-container:hover .carousel{
+	display: flex;
+}
+
+.skill-container ul{
 	margin: 0;
 	padding-left: 1em;
 }
@@ -293,7 +334,7 @@ body{
 .carousel {
 	scroll-snap-type: x mandatory;
 	overflow: auto;
-  	display: flex;
+  	display: none;
   	align-items: center;
 }
 

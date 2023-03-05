@@ -224,10 +224,6 @@ body{
 	max-height: 330px;
 }
 
-.experience .project-container img{
-	width: 100%;
-}
-
 .project-container:hover .overlay{
 	opacity: 1;
 	backdrop-filter: blur(10px);
