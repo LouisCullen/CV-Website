@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="redirection-mobile.js"></script>
+<!-- 	<script src="redirection-mobile.js"></script>
 	<script>
-		SA.redirection_mobile({
-			mobile_url : "lc-computing.com/mobile.html"
-		});
-	</script>
+		// SA.redirection_mobile({
+		// 	mobile_url : "lc-computing.com/mobile.html"
+		// });
+	</script> -->
 	<meta charset="utf-8">
-	<meta name="theme-color" content="2a3a4b"/>
+	<meta name="theme-color" content="16181e"/>
 	<meta name="viewport" content="initial-scale=1">
 	<meta name="description" content="I am a Computer Science student at the University of Manchester with a particular interest in software engineering and a talent for collaboration.">
 	<title>Louis Cullen Computing</title>
@@ -47,7 +47,7 @@
 	</script>
 </head>
 <body style="background-color: #353b48; box-sizing: border-box;">
-	<nav class="navbartp navbar flex-row sticky-top justify-content-start">
+<!-- 	<nav class="navbartp navbar flex-row sticky-top justify-content-start">
 		<a href="https://github.com/LouisCullen"class="navitem d-block icon" style="position: absolute; right: 20px; top: 0.5em"><i class="fa-brands fa-github"></i></a>
 		<a href="mailto: cullen_louis@icloud.com"class="navitem d-block icon" style="position: absolute; right: 20px; top: 2em"><i class="fa-solid fa-envelope"></i></a>
 		<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-block icon" style="position: absolute; right: 20px; top: 3.5em"><i class="fa-brands fa-linkedin"></i></a>
@@ -63,7 +63,45 @@
 			<p class="navitem">|</p>
 			<a class="navitem nav-link" href="#personal">Personal</a>
 		</div>
+	</nav> -->
+
+	<nav class="navbartp navbar navbar-expand-lg sticky-top">
+		<div class="container-fluid">
+      		<div class="navbar-brand brand justify-content-start"><a href="#"><img src="src/logo.png" alt="Logo" style="max-width: 510px; width:60vw"></a></div>
+      		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+	      		<i style="color: #ecf0f1;" class="fa-solid fa-bars"></i>
+	    	</button>
+	    <div class="collapse navbar-collapse" id="navbarToggler">
+	    	<ul class="navbar-nav">
+	        	<li class="nav-item">
+	          		<a class="navitem nav-link" href="#projects">Projects</a>
+	        	</li>
+	        	<li class="nav-item">
+	         		<a class="navitem nav-link" href="#experience">Experience</a>
+	        	</li>
+	        	<li class="nav-item">
+	          		<a class="navitem nav-link" href="#education">Education</a>
+	        	</li>
+	        	<li class="nav-item">
+	          		<a class="navitem nav-link" href="#personal">Personal</a>
+	        	</li>
+	        </ul>
+	        <ul class="navbar-nav" style="flex-direction: column; margin-left: auto;">
+	        	<li class="nav-item">
+	        		<a href="https://github.com/LouisCullen"class="navitem d-block icon" id="github"><i class="fa-brands fa-github"></i></a>
+	        	</li>
+	        	<li>
+					<a href="mailto: cullen_louis@icloud.com"class="navitem d-block icon" id="mail"><i class="fa-solid fa-envelope"></i></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/louis-cullen"class="navitem d-block icon" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+	        	</li>
+	      	</ul>
+	    </div>
+	  </div>
 	</nav>
+
+
 	<div class="container" style="max-width: 1200px; padding-top: 0;">
 		<div class="content row justify-content-center">
 			<div class="d-flex welcome row section justify-content-between">
@@ -90,18 +128,25 @@
 					<div class="col-8 col-lg-6 project column">
 						<div class="project-container container col-12">
 							<img src="src/honestmanchester.png" class="row" style="margin: 0;" alt="Anonymous confessions site">
-							<div class="overlay d-sm-flex d-none">
-								<h3 class="project-title">Honest Manchester</h3>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="honestmanchester"></i>		
+							<div class="overlay">
+								<div class="anti-carousel-container">
+									<h3 class="project-title">Honest Manchester</h3>
+									<div class="interact-pointer" style="font-size: 1.5em;">
+										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+									</div>
 								</div>
-								<div class="carousel">
-									<div class="item" id="honestmanchester0">Honest Manchester was a site created for university students in Manchester to submit anonymous confessions about their experiences. Intended to give a more anonymous alternative to social media confession pages, the idea was to require a confession from the user to enter the site and view others. This would ensure a consistent flow of content.</div>
-									<div class="item" id="honestmanchester1">This project was unique for me as it was undertaken as a method of learning new technologies which I had not experienced before. Because of this, the whole project took an experimental approach and was not intended to be particularly polished or display best practices. Instead, the goal was to have a working site which would teach me some techniques as it was created.</div>
-									<div class="item" id="honestmanchester2">The site was built on a stack of MongoDB, ExpressJS, React and NodeJS, extending my JavaScript abilities beyond what I had experienced before. The familiar frontend styling gave me an opportunity to implement better practices such as less inline styles and less reliance on Bootstrap. Meanwhile, my new exposure to a full stack got me more comfortable working with backend logic.</div>
-								</div>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="honestmanchester"></i>		
+								<div class="carousel-container">
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="honestmanchester"></i>		
+									</div>
+									<div class="carousel">
+										<div class="item" id="honestmanchester0">Honest Manchester was a site created for university students in Manchester to submit anonymous confessions about their experiences. Intended to give a more anonymous alternative to social media confession pages, the idea was to require a confession from the user to enter the site and view others. This would ensure a consistent flow of content.</div>
+										<div class="item" id="honestmanchester1">This project was unique for me as it was undertaken as a method of learning new technologies which I had not experienced before. Because of this, the whole project took an experimental approach and was not intended to be particularly polished or display best practices. Instead, the goal was to have a working site which would teach me some techniques as it was created.</div>
+										<div class="item" id="honestmanchester2">The site was built on a stack of MongoDB, ExpressJS, React and NodeJS, extending my JavaScript abilities beyond what I had experienced before. The familiar frontend styling gave me an opportunity to implement better practices such as less inline styles and less reliance on Bootstrap. Meanwhile, my new exposure to a full stack got me more comfortable working with backend logic.</div>
+									</div>
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="honestmanchester"></i>		
+									</div>
 								</div>
 							</div>
 						</div>
@@ -109,18 +154,25 @@
 					<div class="col-8 col-lg-6 project column">
 						<div class="project-container container col-12">
 							<img src="src/hustlio.png" class="row" style="margin: 0;" alt="Team-based web development">
-							<div class="overlay d-sm-flex d-none">
-								<h3 class="project-title">hustl.io</h3>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="hustlio"></i>		
+							<div class="overlay">
+								<div class="anti-carousel-container">
+									<h3 class="project-title">hustl.io</h3>
+									<div class="interact-pointer" style="font-size: 1.5em;">
+										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+									</div>
 								</div>
-								<div class="carousel">
-									<div class="item" id="hustlio0">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation of the inter-user friend system.</div>
-									<div class="item" id="hustlio1">This project was beneficial for me as it was my first experience of working as a team on a programming project. It taught me how important communication was, with our use of discord calls and regular meetings keeping the project on track, as well as the importance of being open about lack of knowledge and learning from other developers.</div>
-									<div class="item" id="hustlio2">The technologies used were Python, Django, CSS and HTML. I also encountered Docker, SQLite and Postgres DB during development, though these were more the focus of other members of the team.</div>
-								</div>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="hustlio"></i>		
+								<div class="carousel-container">
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="hustlio"></i>		
+									</div>
+									<div class="carousel">
+										<div class="item" id="hustlio0">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation of the inter-user friend system.</div>
+										<div class="item" id="hustlio1">This project was beneficial for me as it was my first experience of working as a team on a programming project. It taught me how important communication was, with our use of discord calls and regular meetings keeping the project on track, as well as the importance of being open about lack of knowledge and learning from other developers.</div>
+										<div class="item" id="hustlio2">The technologies used were Python, Django, CSS and HTML. I also encountered Docker, SQLite and Postgres DB during development, though these were more the focus of other members of the team.</div>
+									</div>
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="hustlio"></i>		
+									</div>
 								</div>
 							</div>
 						</div>
@@ -128,18 +180,25 @@
 					<div class="col-8 col-lg-6 project column float-end float-lg-none">
 						<div class="project-container container col-12">
 							<img src="src/asteroid.png" class="row" style="margin: 0;" alt="Personal game development">
-							<div class="overlay d-sm-flex d-none">
-								<h3 class="project-title">Asteroid Belt</h3>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="asteroid"></i>		
+							<div class="overlay">
+								<div class="anti-carousel-container">
+									<h3 class="project-title">Asteroid Belt</h3>
+									<div class="interact-pointer" style="font-size: 1.5em;">
+										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+									</div>
 								</div>
-								<div class="carousel">
-									<div class="item" id="asteroid0">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</div>
-									<div class="item" id="asteroid1">Creating the game was enjoyable as it gave me a creative freedom which I hadn't experienced much before. The prompt gave some requirements for game features, but the vagueness of the rest allowed me to manage my own time and create a product fully from my own vision.</div>
-									<div class="item" id="asteroid2">The single programming language used was Python with its Tkinter library, which was a given requirement. Tkinter isn't designed for game development like the Pygame library is, so it forced me to find workarounds for implementation, such as my own collision detection and entity tracking.</div>
-								</div>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="asteroid"></i>		
+								<div class="carousel-container">
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="asteroid"></i>		
+									</div>
+									<div class="carousel">
+										<div class="item" id="asteroid0">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</div>
+										<div class="item" id="asteroid1">Creating the game was enjoyable as it gave me a creative freedom which I hadn't experienced much before. The prompt gave some requirements for game features, but the vagueness of the rest allowed me to manage my own time and create a product fully from my own vision.</div>
+										<div class="item" id="asteroid2">The single programming language used was Python with its Tkinter library, which was a given requirement. Tkinter isn't designed for game development like the Pygame library is, so it forced me to find workarounds for implementation, such as my own collision detection and entity tracking.</div>
+									</div>
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="asteroid"></i>		
+									</div>
 								</div>
 							</div>
 						</div>
@@ -147,18 +206,25 @@
 					<div class="col-8 col-lg-6 project column">
 						<div class="project-container container col-12">
 							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;" alt="Personal web development">
-							<div class="overlay d-sm-flex d-none">
-								<h3 class="project-title">lc-computing.com</h3>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="lc-computing"></i>		
+							<div class="overlay">
+								<div class="anti-carousel-container">
+									<h3 class="project-title">lc-computing.com</h3>
+									<div class="interact-pointer" style="font-size: 1.5em;">
+										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+									</div>
 								</div>
-								<div class="carousel">
-									<div class="item" id="lc-computing0">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</div>
-									<div class="item" id="lc-computing1">The main difference between this project and those I've done before is the lack of external motivation. As it is not being created for anyone else, all motivation must come from myself and any delays only impact my online profile. It has also challenged me to choose when to roll out new versions in order to avoid a messy site going live.</div>
-									<div class="item" id="lc-computing2">Created with CSS, HTML, JavaScript and Bootstrap, the website hosted as a static website on AWS through their S3 storage system. With the DNS also handled by AWS' Route 53, I have had to research different methods of hosting websites with cloud computing to find what worked for me, giving me further knowledge outside any courses I have done.</div>
-								</div>
-								<div class="carousel-nav" style="font-size: 1.5em;">
-									<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="lc-computing"></i>		
+								<div class="carousel-container">
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="lc-computing"></i>		
+									</div>
+									<div class="carousel">
+										<div class="item" id="lc-computing0">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</div>
+										<div class="item" id="lc-computing1">The main difference between this project and those I've done before is the lack of external motivation. As it is not being created for anyone else, all motivation must come from myself and any delays only impact my online profile. It has also challenged me to choose when to roll out new versions in order to avoid a messy site going live.</div>
+										<div class="item" id="lc-computing2">Created with CSS, HTML, JavaScript and Bootstrap, the website hosted as a static website on AWS through their S3 storage system. With the DNS also handled by AWS' Route 53, I have had to research different methods of hosting websites with cloud computing to find what worked for me, giving me further knowledge outside any courses I have done.</div>
+									</div>
+									<div class="carousel-nav" style="font-size: 1.5em;">
+										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="lc-computing"></i>		
+									</div>
 								</div>
 							</div>
 						</div>
@@ -175,6 +241,9 @@
 						<p>Shadowing Senior Technical Cloud Architect Cossy Cosmas for a six month period and subsequent occasional meetings introduced me to how cloud computing is used in a financial organisation.</p>
 						<div class="skill-container container col mx-2">
 							<img src="src/git.png" class="row" style="margin: 0;" alt="Git">
+							<div class="interact-pointer d-none d-lg-block" style="font-size: 1.5em;">
+								<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+							</div>
 							<div class="overlay d-none d-lg-flex">
 								<div class="col-12">
 									<ul>
@@ -186,6 +255,9 @@
 						</div>
 						<div class="skill-container container col mx-2">
 							<img src="src/aws.png" class="row" style="margin: 0;" alt="AWS">
+							<div class="interact-pointer d-none d-lg-block" style="font-size: 1.5em;">
+								<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+							</div>
 							<div class="overlay d-none d-lg-flex">
 								<div class="col-12">
 									<ul>
@@ -197,6 +269,9 @@
 						</div>
 						<div class="skill-container container col mx-2">
 							<img src="src/devops.png" class="row" style="margin: 0;" alt="DevOps">
+							<div class="interact-pointer d-none d-lg-block" style="font-size: 1.5em;">
+								<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+							</div>
 							<div class="overlay d-none d-lg-flex">
 								<div class="col-12">
 									<ul>
