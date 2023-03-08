@@ -96,7 +96,7 @@ body{
 	font-size: 25px;
 	display: block;
 	padding: 0 !important;
-	padding-right: 10px !important;
+	padding-left: 15px !important;
 }
 
 .section{
@@ -172,9 +172,9 @@ body{
 .navbartp {
 	background: linear-gradient(to bottom, #16181e, #272c36);
 	margin: 0;
-	padding-left: 1em;
 	align-items: center;
 	padding: 10px;
+	width: ;
 }
 
 .overlay{
@@ -221,10 +221,8 @@ ul{
 }
 
 .project{
-	padding: 10px;
 	max-width: 500px;
-	margin: 5px;
-	box-sizing: content-box;
+	margin: 20px;
 }
 
 .project p{
