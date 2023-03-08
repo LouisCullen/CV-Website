@@ -1,3 +1,4 @@
+/*remove apple stuff*/
 a[x-apple-data-detectors] {
     color: inherit !important;
     text-decoration: none !important;
@@ -7,6 +8,7 @@ a[x-apple-data-detectors] {
     line-height: inherit !important;
 }
 
+/*fonts*/
 p{
 	font-size: 1.2em;
 }
@@ -17,24 +19,6 @@ p{
 	font-size: 1.1pc;
 }
 
-.icon{
-	font-size: 25px;
-	display: block;
-	padding: 0 !important;
-}
-
-#github{
-	top: 0.25em;
-}
-
-#mail{
-	top: 1.5em;
-}
-
-#linkedin{
-	top: 2.75em;
-}
-
 @media only screen and (max-width: 767px){
 	p{
 		font-size: 0.9em;
@@ -43,8 +27,6 @@ p{
 		font-size: 0.9em;
 	}
 }
-
-
 
 h2{
 	padding-bottom: 0.5em;
@@ -62,14 +44,6 @@ h4{
 	font-size: 1em;
 }
 
-
-
-.section{
-	padding-bottom: 2em;
-	margin-bottom: 6em;
-	margin-top: 50px;
-}
-
 .section h2{
 	margin: 0;
 }
@@ -78,6 +52,60 @@ h4{
 	display: inline-block;
 	padding-right: 0.5em;
 }
+
+.content p, ul{
+	color: #bdc3c7;
+}
+
+.navbartp a{
+	text-decoration: none;
+}
+
+.navbartp a:hover{
+	text-decoration: underline;
+	color: #ecf0f1;
+}
+
+.navarrow a{
+	text-decoration: none;
+	color: #bdc3c7;
+	font-size: 3.5pc;
+}
+
+.project a{
+	text-decoration: none;
+	color: #ecf0f1 !important;
+}
+
+.project a:hover{
+	text-decoration: underline;
+}
+
+body{
+	font-family: helvetica;
+}
+
+.project-container h3{
+	font-size: 2em;
+	font-weight: bold;
+	padding-left: 1em;
+}
+/*end fonts*/
+
+.icon{
+	font-size: 25px;
+	display: block;
+	padding: 0 !important;
+	padding-right: 10px !important;
+}
+
+.section{
+	padding-bottom: 2em;
+	margin-bottom: 6em;
+	margin-top: 50px;
+}
+
+
 
 .education-details{
 	padding: 0;
@@ -165,12 +193,6 @@ h4{
 	text-align: left;
 }
 
-.navarrow a{
-	text-decoration: none;
-	color: #bdc3c7;
-	font-size: 3.5pc;
-}
-
 .navarrow{
 	margin: -10vh;
 	display: flex;
@@ -178,18 +200,6 @@ h4{
 	justify-content: center;
 }
 
-.navbartp a{
-	text-decoration: none;
-}
-
-.navbartp a:hover{
-	text-decoration: underline;
-	color: #ecf0f1;
-}
-
-.content p, ul{
-	color: #bdc3c7;
-}
 
 ul{
 	list-style-position: inside;
@@ -204,20 +214,6 @@ ul{
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 	border-radius: 25px;
 	background-color: #2f3640;
-}
-
-
-body{
-	font-family: helvetica;
-}
-
-.project a{
-	text-decoration: none;
-	color: #ecf0f1 !important;
-}
-
-.project a:hover{
-	text-decoration: underline;
 }
 
 .projects img{
@@ -248,12 +244,6 @@ body{
 	padding: 2vw;
 	padding-top: 25px;
 	color: #ecf0f1;
-}
-
-.project-container h3{
-	font-size: 2em;
-	font-weight: bold;
-	padding-left: 1em;
 }
 
 .project-container, .skill-container{
@@ -405,6 +395,13 @@ body{
 	bottom: 5px;
 }
 
-.collapse{
+.navbar-collapse{
+	align-items: initial;
 	display: flex;
+	justify-content: space-between;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
 }
