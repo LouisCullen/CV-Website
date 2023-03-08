@@ -227,11 +227,7 @@ body{
 .project{
 	padding: 10px;
 	max-width: 500px;
-	min-width: 415px;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin: 5px;
 	box-sizing: content-box;
 }
 
