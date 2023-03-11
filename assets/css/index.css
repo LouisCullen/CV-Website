@@ -83,7 +83,8 @@ h4{
 
 body{
 	font-family: helvetica;
-	background-color: #353b48;
+/*	background-color: #353b48;*/
+	background: linear-gradient(to bottom, #272c36 2%, #353b48 3.5%);
 	box-sizing: border-box;
 }
 
