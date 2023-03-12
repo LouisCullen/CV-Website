@@ -83,252 +83,253 @@
 	  </div>
 	</nav>
 
-
-	<div class="container" style="max-width: 1200px; padding-top: 0;">
-		<div class="content row justify-content-center">
-			<div class="d-flex welcome row section justify-content-between">
-				<div class="d-flex col-12 col-md-8">
-					<span>
-						<h1><b>I'm Louis, <br>a Computer Science student based in Manchester/London</b></h1>
-						<p>I have a keen eye for problem solving and love adding creative flourishes, with a particular interest in software development. Contact me for information about myself, my projects or computer science in general!</p>
-					</span>
-				</div>
-				<div class="d-flex col-12 col-md-4 align-items-center justify-content-center">
-					<div class="face">
-						<img src="src/new_profile.jpeg" alt="Louis Cullen">
+	<div class="bg-colour">
+		<div class="container" style="max-width: 1200px; padding-top: 0;">
+			<div class="content row justify-content-center">
+				<div class="d-flex welcome row section justify-content-between">
+					<div class="d-flex col-12 col-md-8">
+						<span>
+							<h1><b>I'm Louis, <br>a Computer Science student based in Manchester/London</b></h1>
+							<p>I have a keen eye for problem solving and love adding creative flourishes, with a particular interest in software development. Contact me for information about myself, my projects or computer science in general!</p>
+						</span>
+					</div>
+					<div class="d-flex col-12 col-md-4 align-items-center justify-content-center">
+						<div class="face">
+							<img src="src/new_profile.jpeg" alt="Louis Cullen">
+						</div>
 					</div>
 				</div>
+				<div class="navarrow d-md-flex d-none"><a href="#projects"><i class="fa-solid fa-circle-chevron-down" ></i></a></div>
+				<div class="projects row section">
+					<div class="title-row d-flex flex-row justify-content-start align-items-center">
+						<h2 class="pe-4"><a id="projects"></a>Projects</h2>
+						<p class="d-none d-md-block">While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result whether that's during a university team coding project or a personal website.</p>
+					</div>
+					<p class="d-md-none d-block" style="margin-top: 10px;">While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result whether that's during a university team coding project or a personal website.</p>
+					<div class="row justify-content-around g-0">
+						<div class="col-12 col-lg-6 project column">
+							<div class="project-container container col-12">
+								<img src="src/honestmanchester.png" class="row" style="margin: 0;" alt="Anonymous confessions site">
+								<div class="overlay">
+									<div class="anti-carousel-container">
+										<h3 class="project-title">Honest Manchester</h3>
+										<div class="interact-pointer">
+											<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+										</div>
+									</div>
+									<div class="carousel-container">
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="honestmanchester"></i>		
+										</div>
+										<div class="carousel">
+											<div class="item" id="honestmanchester0">Honest Manchester was a site created for university students in Manchester to submit anonymous confessions about their experiences. Intended to give a more anonymous alternative to social media confession pages, the idea was to require a confession from the user to enter the site and view others. This would ensure a consistent flow of content.</div>
+											<div class="item" id="honestmanchester1">This project was unique for me as it was undertaken as a method of learning new technologies which I had not experienced before. Because of this, the whole project took an experimental approach and was not intended to be particularly polished or display best practices. Instead, the goal was to have a working site which would teach me some techniques as it was created.</div>
+											<div class="item" id="honestmanchester2">The site was built on a stack of MongoDB, ExpressJS, React and NodeJS, extending my JavaScript abilities beyond what I had experienced before. The familiar frontend styling gave me an opportunity to implement better practices such as less inline styles and less reliance on Bootstrap. Meanwhile, my new exposure to a full stack got me more comfortable working with backend logic.</div>
+										</div>
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="honestmanchester"></i>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 project column">
+							<div class="project-container container col-12">
+								<img src="src/hustlio.png" class="row" style="margin: 0;" alt="Team-based web development">
+								<div class="overlay">
+									<div class="anti-carousel-container">
+										<h3 class="project-title">hustl.io</h3>
+										<div class="interact-pointer">
+											<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+										</div>
+									</div>
+									<div class="carousel-container">
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="hustlio"></i>		
+										</div>
+										<div class="carousel">
+											<div class="item" id="hustlio0">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation of the inter-user friend system.</div>
+											<div class="item" id="hustlio1">This project was beneficial for me as it was my first experience of working as a team on a programming project. It taught me how important communication was, with our use of discord calls and regular meetings keeping the project on track, as well as the importance of being open about lack of knowledge and learning from other developers.</div>
+											<div class="item" id="hustlio2">The technologies used were Python, Django, CSS and HTML. I also encountered Docker, SQLite and Postgres DB during development, though these were more the focus of other members of the team.</div>
+										</div>
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="hustlio"></i>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 project column">
+							<div class="project-container container col-12">
+								<img src="src/asteroid.png" class="row" style="margin: 0;" alt="Personal game development">
+								<div class="overlay">
+									<div class="anti-carousel-container">
+										<h3 class="project-title">Asteroid Belt</h3>
+										<div class="interact-pointer">
+											<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+										</div>
+									</div>
+									<div class="carousel-container">
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="asteroid"></i>		
+										</div>
+										<div class="carousel">
+											<div class="item" id="asteroid0">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</div>
+											<div class="item" id="asteroid1">Creating the game was enjoyable as it gave me a creative freedom which I hadn't experienced much before. The prompt gave some requirements for game features, but the vagueness of the rest allowed me to manage my own time and create a product fully from my own vision.</div>
+											<div class="item" id="asteroid2">The single programming language used was Python with its Tkinter library, which was a given requirement. Tkinter isn't designed for game development like the Pygame library is, so it forced me to find workarounds for implementation, such as my own collision detection and entity tracking.</div>
+										</div>
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="asteroid"></i>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 project column">
+							<div class="project-container container col-12">
+								<img src="src/lc-computing.jpeg" class="row" style="margin: 0;" alt="Personal web development">
+								<div class="overlay">
+									<div class="anti-carousel-container">
+										<h3 class="project-title">lc-computing.com</h3>
+										<div class="interact-pointer">
+											<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+										</div>
+									</div>
+									<div class="carousel-container">
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="lc-computing"></i>		
+										</div>
+										<div class="carousel">
+											<div class="item" id="lc-computing0">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</div>
+											<div class="item" id="lc-computing1">The main difference between this project and those I've done before is the lack of external motivation. As it is not being created for anyone else, all motivation must come from myself and any delays only impact my online profile. It has also challenged me to choose when to roll out new versions in order to avoid a messy site going live.</div>
+											<div class="item" id="lc-computing2">Created with CSS, HTML, JavaScript and Bootstrap, the website hosted as a static website on AWS through their S3 storage system. With the DNS also handled by AWS' Route 53, I have had to research different methods of hosting websites with cloud computing to find what worked for me, giving me further knowledge outside any courses I have done.</div>
+										</div>
+										<div class="carousel-nav">
+											<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="lc-computing"></i>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="experience row section">
+					<div class="title-row d-flex flex-row justify-content-start align-items-center">
+						<h2 class="row"><a id="experience"></a>Experience</h2>
+					</div>
+					<div class="col-12">
+						<div class="row experience-example">
+							<h3>Cloud Architecture DevOps</h3>
+							<p>Shadowing Senior Technical Cloud Architect Cossy Cosmas for a six month period and subsequent occasional meetings introduced me to how cloud computing is used in a financial organisation.</p>
+							<div class="skill-container container col mx-2">
+								<img src="src/git.png" class="row" alt="Git">
+								<div class="interact-pointer d-none d-lg-block">
+									<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+								</div>
+								<div class="overlay d-none d-lg-flex">
+									<div class="col-12">
+										<ul>
+											<li>Covered coding concepts such as code branching, peer review and deployment using GIT based code management tools.</li>
+											<li>Gained an insight in to best-practice automation tools such as Jenkins and techniques such as Continuous Integration/Continuous Deployment.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="skill-container container col mx-2">
+								<img src="src/aws.png" class="row" alt="AWS">
+								<div class="interact-pointer d-none d-lg-block">
+									<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+								</div>
+								<div class="overlay d-none d-lg-flex">
+									<div class="col-12">
+										<ul>
+											<li>Evaluated the significant financial, operational and environmental benefits of cloud computing.</li>
+											<li>Reconciled my theoretical understanding of AWS Cloud technologies with direct exposure to a fully operational PCI DSS transaction processing service.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="skill-container container col mx-2">
+								<img src="src/devops.png" class="row" alt="DevOps">
+								<div class="interact-pointer d-none d-lg-block">
+									<i class="fa-regular fa-hand-pointer" id="interact"></i>		
+								</div>
+								<div class="overlay d-none d-lg-flex">
+									<div class="col-12">
+										<ul>
+											<li>Explored the pros and cons of a strict DevOps deployment methodology.</li>
+											<li>Developed a deeper understanding of DevOps concepts such as Infrastructure as Code and Configuration Management using Terraform and Puppet applications.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="education row section justify-content-center">
+					<div class="title-row d-flex flex-row justify-content-start align-items-center">
+						<h2 class="pe-4"><a id="education"></a>Education</h2>
+						<p class="d-none d-md-block">While there's no area in which I can claim to be an expert yet, I'm an eager learner who approaches every topic with an open mind and a determination to understand the concept.</p>
+					</div>
+					<p class="d-block d-md-none" style="margin-top: 10px;">While there's no area in which I can claim to be an expert yet, I'm an eager learner who approaches every topic with an open mind and a determination to understand the concept.</p>
+					<div style="max-width: 1150px;">
+						<div class="row school">
+							<div class="col-12 col-sm-7">
+								<h3>University of Manchester</h3><h4>2021-present</h4>
+								<p class="education-details">I'm currently enrolled on BSc Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
+							</div>
+							<div class="col-12 col-sm-5 justify-content-end">
+								<img src="src/uom2.png" alt="University of Manchester">
+							</div>
+						</div>
+						<div class="row school ms-md-auto">
+							<div class="col-12 col-sm-7 order-first order-md-last">
+								<h3>Therfield Sixth Form</h3><h4>2019-2021</h4>
+								<p class="education-details">I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
+							</div>
+							<div class="col-12 col-sm-5 order-last order-md-first">
+								<img src="src/therfield_crop.png" alt="Therfield School">
+							</div>
+						</div>
+						<div class="row school">
+							<div class="col-12 col-sm-7">
+								<h3>Therfield School</h3><h4>2014-2019</h4>
+								<p class="education-details">I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
+							</div>
+							<div class="col-12 col-sm-5">
+								<img src="src/therfield_crop.png" alt="Therfield School">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="personal row section">
+					<div class="title-row d-flex flex-row justify-content-start align-items-center">
+						<h2 class="row"><a id="personal"></a>Personal</h2>
+					</div>
+					<div class="col-12 personal-example d-flex align-items-center">
+						<img class="col-2" src="src/football.png" alt="Football">
+						<div class="col personal-content">
+							<p>Having played football since 6 years old, the beautiful game has always been a major part of my life. Growing with the Oxshott Royals team from u7 to u15, I loved being a team player and taking on leadership roles when required.</p>
+							<p>As a passionate Chelsea fan, I love watching the games whenever possible, even if they don't always produce the result we want.</p>
+						</div>
+					</div>
+					<div class="col-12 personal-example d-flex align-items-center">
+						<img class="col-2" src="src/f1.png" alt="F1">
+						<div class="col personal-content felx align-items-center">
+							<p>From watching F1 with my dad many years ago, a love for the speed and noise of such highly engineered cars was inevitable. I rarely miss a race and relish the buzz of the home fans at the British Grand Prix.</p>
+							<p>Despite no specific team alliance, I love an underdog story and can't wait to see the future of the sport coming through the ranks to prove themselves against the best.</p>
+						</div>
+					</div>
+					<div class="col-12 personal-example d-flex align-items-center">
+						<img class="col-2" src="src/music.png" alt="Music">
+						<div class="col personal-content felx align-items-center">
+							<p>With the fantastic Manchester music scene on my doorstep, I often spend weekends out at concerts or shows with friends whenever possible.</p>
+							<p>If I'm not out at a live show, I'll almost always have a song scoring my day-to-day life, particularly when working on a project. Genres can range from rock and indie to house and garage, with some particularly strange ones scattered through my playlists!</p>
+						</div>
+					</div>
+				</div>
+				<p>This website is under constant development, feel free to suggest any improvements.</p>
 			</div>
-			<div class="navarrow d-md-flex d-none"><a href="#projects"><i class="fa-solid fa-circle-chevron-down" ></i></a></div>
-			<div class="projects row section">
-				<div class="title-row d-flex flex-row justify-content-start align-items-center">
-					<h2 class="pe-4"><a id="projects"></a>Projects</h2>
-					<p class="d-none d-md-block">While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result whether that's during a university team coding project or a personal website.</p>
-				</div>
-				<p class="d-md-none d-block" style="margin-top: 10px;">While I don't always begin a project with full knowledge of how to complete it, I have the determination to learn throughout the process and dedicate full effort to producing a high quality result whether that's during a university team coding project or a personal website.</p>
-				<div class="row justify-content-around g-0">
-					<div class="col-12 col-lg-6 project column">
-						<div class="project-container container col-12">
-							<img src="src/honestmanchester.png" class="row" style="margin: 0;" alt="Anonymous confessions site">
-							<div class="overlay">
-								<div class="anti-carousel-container">
-									<h3 class="project-title">Honest Manchester</h3>
-									<div class="interact-pointer">
-										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-									</div>
-								</div>
-								<div class="carousel-container">
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="honestmanchester"></i>		
-									</div>
-									<div class="carousel">
-										<div class="item" id="honestmanchester0">Honest Manchester was a site created for university students in Manchester to submit anonymous confessions about their experiences. Intended to give a more anonymous alternative to social media confession pages, the idea was to require a confession from the user to enter the site and view others. This would ensure a consistent flow of content.</div>
-										<div class="item" id="honestmanchester1">This project was unique for me as it was undertaken as a method of learning new technologies which I had not experienced before. Because of this, the whole project took an experimental approach and was not intended to be particularly polished or display best practices. Instead, the goal was to have a working site which would teach me some techniques as it was created.</div>
-										<div class="item" id="honestmanchester2">The site was built on a stack of MongoDB, ExpressJS, React and NodeJS, extending my JavaScript abilities beyond what I had experienced before. The familiar frontend styling gave me an opportunity to implement better practices such as less inline styles and less reliance on Bootstrap. Meanwhile, my new exposure to a full stack got me more comfortable working with backend logic.</div>
-									</div>
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="honestmanchester"></i>		
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 project column">
-						<div class="project-container container col-12">
-							<img src="src/hustlio.png" class="row" style="margin: 0;" alt="Team-based web development">
-							<div class="overlay">
-								<div class="anti-carousel-container">
-									<h3 class="project-title">hustl.io</h3>
-									<div class="interact-pointer">
-										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-									</div>
-								</div>
-								<div class="carousel-container">
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="hustlio"></i>		
-									</div>
-									<div class="carousel">
-										<div class="item" id="hustlio0">Hustl.io was a team project completed in my first year of university. Throughout the year we visualised, designed and produced a fantasy trading website with real stock market data and inter-user functionality. My main tasks were front-end development and implementation of the inter-user friend system.</div>
-										<div class="item" id="hustlio1">This project was beneficial for me as it was my first experience of working as a team on a programming project. It taught me how important communication was, with our use of discord calls and regular meetings keeping the project on track, as well as the importance of being open about lack of knowledge and learning from other developers.</div>
-										<div class="item" id="hustlio2">The technologies used were Python, Django, CSS and HTML. I also encountered Docker, SQLite and Postgres DB during development, though these were more the focus of other members of the team.</div>
-									</div>
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="hustlio"></i>		
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 project column">
-						<div class="project-container container col-12">
-							<img src="src/asteroid.png" class="row" style="margin: 0;" alt="Personal game development">
-							<div class="overlay">
-								<div class="anti-carousel-container">
-									<h3 class="project-title">Asteroid Belt</h3>
-									<div class="interact-pointer">
-										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-									</div>
-								</div>
-								<div class="carousel-container">
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="asteroid"></i>		
-									</div>
-									<div class="carousel">
-										<div class="item" id="asteroid0">Asteroid Belt was a solo project focused on game development. On top of the retro styling being difficult to get right, the challenges surrounding implementation stretched my logical ability and forced me to find workarounds where there was no native solution.</div>
-										<div class="item" id="asteroid1">Creating the game was enjoyable as it gave me a creative freedom which I hadn't experienced much before. The prompt gave some requirements for game features, but the vagueness of the rest allowed me to manage my own time and create a product fully from my own vision.</div>
-										<div class="item" id="asteroid2">The single programming language used was Python with its Tkinter library, which was a given requirement. Tkinter isn't designed for game development like the Pygame library is, so it forced me to find workarounds for implementation, such as my own collision detection and entity tracking.</div>
-									</div>
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="asteroid"></i>		
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 project column">
-						<div class="project-container container col-12">
-							<img src="src/lc-computing.jpeg" class="row" style="margin: 0;" alt="Personal web development">
-							<div class="overlay">
-								<div class="anti-carousel-container">
-									<h3 class="project-title">lc-computing.com</h3>
-									<div class="interact-pointer">
-										<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-									</div>
-								</div>
-								<div class="carousel-container">
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-left" onclick="prevCarousel(this.id)" id="lc-computing"></i>		
-									</div>
-									<div class="carousel">
-										<div class="item" id="lc-computing0">lc-computing.com is this project, designed as a more creative approach to a CV while showing some of my web development abilities too. Creating this website has challenged me to discover new techniques to make a professional-looking website, while still giving me a platform to show my preferred styling and personality and show off new techniques I pick up.</div>
-										<div class="item" id="lc-computing1">The main difference between this project and those I've done before is the lack of external motivation. As it is not being created for anyone else, all motivation must come from myself and any delays only impact my online profile. It has also challenged me to choose when to roll out new versions in order to avoid a messy site going live.</div>
-										<div class="item" id="lc-computing2">Created with CSS, HTML, JavaScript and Bootstrap, the website hosted as a static website on AWS through their S3 storage system. With the DNS also handled by AWS' Route 53, I have had to research different methods of hosting websites with cloud computing to find what worked for me, giving me further knowledge outside any courses I have done.</div>
-									</div>
-									<div class="carousel-nav">
-										<i class="fa-solid fa-circle-chevron-right" onclick="nextCarousel(this.id)" id="lc-computing"></i>		
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="experience row section">
-				<div class="title-row d-flex flex-row justify-content-start align-items-center">
-					<h2 class="row"><a id="experience"></a>Experience</h2>
-				</div>
-				<div class="col-12">
-					<div class="row experience-example">
-						<h3>Cloud Architecture DevOps</h3>
-						<p>Shadowing Senior Technical Cloud Architect Cossy Cosmas for a six month period and subsequent occasional meetings introduced me to how cloud computing is used in a financial organisation.</p>
-						<div class="skill-container container col mx-2">
-							<img src="src/git.png" class="row" alt="Git">
-							<div class="interact-pointer d-none d-lg-block">
-								<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-							</div>
-							<div class="overlay d-none d-lg-flex">
-								<div class="col-12">
-									<ul>
-										<li>Covered coding concepts such as code branching, peer review and deployment using GIT based code management tools.</li>
-										<li>Gained an insight in to best-practice automation tools such as Jenkins and techniques such as Continuous Integration/Continuous Deployment.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="skill-container container col mx-2">
-							<img src="src/aws.png" class="row" alt="AWS">
-							<div class="interact-pointer d-none d-lg-block">
-								<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-							</div>
-							<div class="overlay d-none d-lg-flex">
-								<div class="col-12">
-									<ul>
-										<li>Evaluated the significant financial, operational and environmental benefits of cloud computing.</li>
-										<li>Reconciled my theoretical understanding of AWS Cloud technologies with direct exposure to a fully operational PCI DSS transaction processing service.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="skill-container container col mx-2">
-							<img src="src/devops.png" class="row" alt="DevOps">
-							<div class="interact-pointer d-none d-lg-block">
-								<i class="fa-regular fa-hand-pointer" id="interact"></i>		
-							</div>
-							<div class="overlay d-none d-lg-flex">
-								<div class="col-12">
-									<ul>
-										<li>Explored the pros and cons of a strict DevOps deployment methodology.</li>
-										<li>Developed a deeper understanding of DevOps concepts such as Infrastructure as Code and Configuration Management using Terraform and Puppet applications.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="education row section justify-content-center">
-				<div class="title-row d-flex flex-row justify-content-start align-items-center">
-					<h2 class="pe-4"><a id="education"></a>Education</h2>
-					<p class="d-none d-md-block">While there's no area in which I can claim to be an expert yet, I'm an eager learner who approaches every topic with an open mind and a determination to understand the concept.</p>
-				</div>
-				<p class="d-block d-md-none" style="margin-top: 10px;">While there's no area in which I can claim to be an expert yet, I'm an eager learner who approaches every topic with an open mind and a determination to understand the concept.</p>
-				<div style="max-width: 1150px;">
-					<div class="row school">
-						<div class="col-12 col-sm-7">
-							<h3>University of Manchester</h3><h4>2021-present</h4>
-							<p class="education-details">I'm currently enrolled on BSc Computer Science in my second year. I passed first year with an 82% average, covering the basics of high and low level programming languages and the design of systems from CPU architecture right up to software development.</p>
-						</div>
-						<div class="col-12 col-sm-5 justify-content-end">
-							<img src="src/uom2.png" alt="University of Manchester">
-						</div>
-					</div>
-					<div class="row school ms-md-auto">
-						<div class="col-12 col-sm-7 order-first order-md-last">
-							<h3>Therfield Sixth Form</h3><h4>2019-2021</h4>
-							<p class="education-details">I achieved GCE results of A* in Maths, Further Maths, Computer Science and Physics through my 2 years here, working independently much of the time and adapting to remote working during the pandemic.</p>
-						</div>
-						<div class="col-12 col-sm-5 order-last order-md-first">
-							<img src="src/therfield_crop.png" alt="Therfield School">
-						</div>
-					</div>
-					<div class="row school">
-						<div class="col-12 col-sm-7">
-							<h3>Therfield School</h3><h4>2014-2019</h4>
-							<p class="education-details">I achieved nine grade 9s and a grade 8 in my GCSEs, covering a range of sciences, humanities and languages. It was during GCSE computer science that my determination to enter the field began.</p>
-						</div>
-						<div class="col-12 col-sm-5">
-							<img src="src/therfield_crop.png" alt="Therfield School">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="personal row section">
-				<div class="title-row d-flex flex-row justify-content-start align-items-center">
-					<h2 class="row"><a id="personal"></a>Personal</h2>
-				</div>
-				<div class="col-12 personal-example d-flex align-items-center">
-					<img class="col-2" src="src/football.png" alt="Football">
-					<div class="col personal-content">
-						<p>Having played football since 6 years old, the beautiful game has always been a major part of my life. Growing with the Oxshott Royals team from u7 to u15, I loved being a team player and taking on leadership roles when required.</p>
-						<p>As a passionate Chelsea fan, I love watching the games whenever possible, even if they don't always produce the result we want.</p>
-					</div>
-				</div>
-				<div class="col-12 personal-example d-flex align-items-center">
-					<img class="col-2" src="src/f1.png" alt="F1">
-					<div class="col personal-content felx align-items-center">
-						<p>From watching F1 with my dad many years ago, a love for the speed and noise of such highly engineered cars was inevitable. I rarely miss a race and relish the buzz of the home fans at the British Grand Prix.</p>
-						<p>Despite no specific team alliance, I love an underdog story and can't wait to see the future of the sport coming through the ranks to prove themselves against the best.</p>
-					</div>
-				</div>
-				<div class="col-12 personal-example d-flex align-items-center">
-					<img class="col-2" src="src/music.png" alt="Music">
-					<div class="col personal-content felx align-items-center">
-						<p>With the fantastic Manchester music scene on my doorstep, I often spend weekends out at concerts or shows with friends whenever possible.</p>
-						<p>If I'm not out at a live show, I'll almost always have a song scoring my day-to-day life, particularly when working on a project. Genres can range from rock and indie to house and garage, with some particularly strange ones scattered through my playlists!</p>
-					</div>
-				</div>
-			</div>
-			<p>This website is under constant development, feel free to suggest any improvements.</p>
 		</div>
 	</div>
 </body>

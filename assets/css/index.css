@@ -83,8 +83,7 @@ h4{
 
 body{
 	font-family: helvetica;
-/*	background-color: #353b48;*/
-	background: linear-gradient(to bottom, #272c36 2%, #353b48 3.5%);
+	background-color: #353b48;
 	box-sizing: border-box;
 }
 
@@ -245,6 +244,11 @@ ul{
 	padding: 2vw;
 	padding-top: 25px;
 	color: #ecf0f1;
+}
+
+.bg-colour{
+	background: -webkit-linear-gradient(to bottom, rgba(39, 44, 54, 1), rgba(53, 59, 72, 1) 15%);
+	background: linear-gradient(to bottom, #272c36, #353b48 7%);
 }
 
 .project-container, .skill-container{
