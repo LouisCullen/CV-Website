@@ -40,6 +40,10 @@ h2 a{
 	top: -157px;
 }
 
+h3{
+	font-weight: bold;
+}
+
 h4{
 	font-size: 1em;
 }
@@ -87,10 +91,15 @@ body{
 	box-sizing: border-box;
 }
 
-.project-container h3{
+.project h3{
 	font-size: 2em;
 	font-weight: bold;
 	padding-left: 1em;
+	position: absolute;
+	left: -10%;
+	top: 30%;
+	z-index: 1;
+	transition-duration: 0.2s;
 }
 /*end fonts*/
 
@@ -176,7 +185,6 @@ body{
 	margin: 0;
 	align-items: center;
 	padding: 10px;
-	width: ;
 }
 
 .overlay{
@@ -203,6 +211,11 @@ body{
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	animation-name: bounce-1;
+	animation-timing-function: ease;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
 }
 
 
@@ -221,13 +234,32 @@ ul{
 	background-color: #2f3640;
 }
 
+
+
+
+.row{
+	padding: 0;
+}
+
+.content{
+	padding: 3vw;
+	padding-top: 25px;
+	color: #ecf0f1;
+}
+
+.bg-colour{
+	background: -webkit-linear-gradient(to bottom, rgba(39, 44, 54, 1), rgba(53, 59, 72, 1) 15%);
+	background: linear-gradient(to bottom, #272c36, #353b48 7%);
+}
+
 .projects img{
 	width: 100%;
 }
 
 .project{
 	max-width: 500px;
-	margin: 20px;
+	padding: 15px;
+	container-type: inline-size;
 }
 
 .project p{
@@ -238,22 +270,6 @@ ul{
 	cursor: pointer;
 }
 
-
-.row{
-	padding: 0;
-}
-
-.content{
-	padding: 2vw;
-	padding-top: 25px;
-	color: #ecf0f1;
-}
-
-.bg-colour{
-	background: -webkit-linear-gradient(to bottom, rgba(39, 44, 54, 1), rgba(53, 59, 72, 1) 15%);
-	background: linear-gradient(to bottom, #272c36, #353b48 7%);
-}
-
 .project-container, .skill-container{
 	z-index: 0;
 	overflow: hidden;
@@ -262,6 +278,7 @@ ul{
 	padding: 0;
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
 	aspect-ratio: 16/9;
+	container-type: size;
 }
 
 .project-container img{
@@ -272,23 +289,22 @@ ul{
 
 .skill-container{
 	display: flex;
-	background-color: #353b48;
+	/* background-color: #353b48; */
 	align-items: center;
 	padding: 3%;
 	max-height: 330px;
+	justify-content: center;
+	box-shadow: none;
 }
 
-.skill-container img{
-	object-fit: contain;
-	width: 100%;
-	height: 100%;
-	margin: 0;
+.skill-container .skill-icon{
+	font-size: 75cqh;
 }
 
 .skill-container:hover .overlay{
 	transition: 0.35s;
 	opacity: 1;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .skill-container .overlay{
@@ -316,11 +332,12 @@ ul{
 
 .carousel-container{
 	transition-timing-function: ease-in-out;
-	transition: 1s;
+	transition: 0.2s;
 	display: flex;
 	position: absolute;
 	top: 0;
-	right: -100%;
+	/* right: -100%; */
+	opacity: 0;
 	height: 100%;
 	width: 100%;
 	align-items: center;
@@ -331,7 +348,8 @@ ul{
 
 .anti-carousel-container{
 	transition-timing-function: ease-in-out;
-	transition: 1s;
+	transition: 0.7s;
+	transition-delay: 0.1s;
 	display: flex;
 	position: absolute;
 	top: 0;
@@ -344,16 +362,22 @@ ul{
 	padding-right: 10px;
 }
 
+.project:hover h3{
+	z-index: -1;
+	font-size: 1.5em;
+}
+
 .project-container:hover .carousel-container{
 	transition-timing-function: ease-in-out;
-	transition: 1s;
-	right: 0;
+	transition: 0.7s;
+	transition-delay: 0.1s;
+	opacity: 1;
 }
 
 .project-container:hover .anti-carousel-container{
 	transition-timing-function: ease-in-out;
-	transition: 1s;
-	left: -100%;
+	transition: 0.2s;
+	opacity: 0;
 }
 
 .skill-container ul{
@@ -379,8 +403,10 @@ ul{
 	margin-top: 1rem;
 }
 
-.personal-example img{
-	margin-right: 2em;
+.personal-example i{
+	margin-right: 0.5em;
+	margin-left: 0.2em;
+	font-size: min(10vw, 100px);
 }
 
 .carousel {
@@ -388,6 +414,12 @@ ul{
 	overflow: auto;
   	display: flex;
   	align-items: center;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar{
+	display: none;
 }
 
 .carousel .item{
@@ -426,4 +458,15 @@ ul{
 .collapsed i{
 	transition: 0.35s;
 	transform: rotate(0);
+}
+
+/*animations*/
+@keyframes bounce-1 {
+	0%   { transform: scale(1,1)    translateY(0); }
+	5%  { transform: scale(1.1,.9) translateY(0); }
+	12%  { transform: scale(.9,1.1) translateY(-5%); }
+	17%  { transform: scale(1,1)    translateY(0); }
+	22%  { transform: scale(1,1)    translateY(-2%); }
+	32%  { transform: scale(1,1)    translateY(0); }
+	100% { transform: scale(1,1)    translateY(0); }
 }
